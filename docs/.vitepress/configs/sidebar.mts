@@ -17,6 +17,22 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '构建并发布', link: '/developer/tauri/BuildAndPublish/BuildAndPublish' },
       ]
     },
+    {
+      text: 'Rust 学习笔记',
+      items: [
+        { text: '简介', link: '/developer/rust/简介.md'},
+        { text: '开始', items: [
+          { text: '安装 Rust', link: '/developer/rust/开始/安装 Rust.md' },
+          { text: '哈喽 Rust', link: '/developer/rust/开始/哈喽 Rust.md' },
+          { text: '哈喽 Cargo',link: '/developer/rust/开始/哈喽 Cargo.md'}
+        ] },
+        {
+          text: '基础语法——猜数游戏', link: '/developer/rust/基础语法——猜数游戏/引入.md', items: [
+            {text: '赋值, 模式匹配, 函数, 外部 crate', link: '/developer/rust/基础语法——猜数游戏/赋值, 模式匹配, 函数, 外部 crate.md' },
+          ]
+        }
+      ]
+    }
   ],
   '/': [
     {

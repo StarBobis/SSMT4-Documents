@@ -15,6 +15,10 @@ export const nav: DefaultTheme.Config['nav'] = [
         text: 'Tauri学习笔记', 
         link: '/developer/tauri/HowToSetIcon/HowToSetIcon' 
       },
+      {
+        text: 'Rust 学习笔记', 
+        link: '/developer/rust/简介.md'
+      }
     ]
   }
 ]
