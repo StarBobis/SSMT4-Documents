@@ -9,6 +9,7 @@ SSMT4-Documents项目基于VitePress2.0系列开发
 `bun vitepress init`
 
 # 初始化参数
+:::details 点击展开
 ```
 PS D:\Dev\SSMT4-Documents> bun vitepress init
 
@@ -45,6 +46,7 @@ o  Prefix for VitePress npm scripts:
 
 PS D:\Dev\SSMT4-Documents>
 ```
+:::
 # 运行测试
 
 `bun run docs:dev`
