@@ -1,2 +1,5 @@
-html.dark .only-light { display: none; }
-html:not(.dark) .only-dark { display: none; }
+/* .centeringimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
