@@ -37,6 +37,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
             {text: '赋值', link: '/developer/rust/基础语法——猜数游戏/赋值.md' },
             {text: '第三方包依赖', link: '/developer/rust/基础语法——猜数游戏/第三方包依赖.md' },
             {text: '控制语句和模式匹配', link: '/developer/rust/基础语法——猜数游戏/控制语句和模式匹配.md' },
+            {text: '循环与表达式', link: '/developer/rust/基础语法——猜数游戏/循环与表达式.md' },
           ]
         }
       ]

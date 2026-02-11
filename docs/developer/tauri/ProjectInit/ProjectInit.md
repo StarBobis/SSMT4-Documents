@@ -1,6 +1,7 @@
 找个文件夹运行：
 `bun create tauri-app`
 随后一路填写参数
+:::details 点击展开
 ```
 PS D:\Dev> bun create tauri-app
 ✔ Project name · ssmt4
@@ -24,6 +25,7 @@ For Android development, run:
 PS D:\Dev>
 
 ```
+:::
 
 可以看到文件夹就被创建好了
 
