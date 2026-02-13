@@ -4,7 +4,7 @@ import { nav } from './configs/nav.mts'
 import { sidebar } from './configs/sidebar.mts'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import katexPlugin from './katex-compat.js'
-import strict from 'node:assert/strict'
+// import strict from 'node:assert/strict'
 
 export default defineConfig({
   base: "/SSMT4-Documents/",
