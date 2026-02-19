@@ -41,8 +41,15 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         {
           text: '编程语言常识', items: [
             {text: '强类型与弱类型, 静态类型与动态类型', link: '/developer/rust/编程语言常识/强类型与弱类型, 静态类型与动态类型.md' },
-            {text: '编译型和解释型语言', link: '/developer/rust/编程语言常识/编译型和解释型语言.md'}
+            {text: '编译型和解释型语言', link: '/developer/rust/编程语言常识/编译型和解释型语言.md'},
+            {text: '栈内存与堆内存', link: '/developer/rust/编程语言常识/栈内存与堆内存.md' }
           ]
+        },
+        {
+          text: '基本语法与数据类型', link: '/developer/rust/基本语法与基本数据类型/基本语法与基本数据类型.md'
+        },
+        {
+          text: '函数与控制流', link: '/developer/rust/函数与控制流/函数与控制流.md'
         }
       ]
     }
