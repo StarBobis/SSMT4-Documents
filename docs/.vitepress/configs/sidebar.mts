@@ -3,14 +3,6 @@ import type { DefaultTheme } from 'vitepress'
 export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/developer/': [
     {
-      text: 'SSMT开发日志',
-      items: [
-        { text: '为什么选择Rust + Tauri', link: '/developer/ssmt/WhyRustAndTauri/WhyRustAndTauri' },
-        { text: '为什么不设计为解压即用', link: '/developer/ssmt/WhyNoPortable/WhyNoPortable' },
-
-      ]
-    },
-    {
       text: 'VitePress2.0文档',
       items: [
         { text: '项目初始化', link: '/developer/vitepress/project-init' }

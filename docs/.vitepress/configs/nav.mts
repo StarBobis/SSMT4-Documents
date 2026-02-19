@@ -18,13 +18,8 @@ export const nav: DefaultTheme.Config['nav'] = [
       {
         text: 'Rust 学习笔记', 
         link: '/developer/rust/简介.md'
-      },
-      {
-        text: 'SSMT开发日志', 
-        link: '/developer/ssmt/WhyRustAndTauri/WhyRustAndTauri'
       }
-      //WhyRustAndTauri
-
+      
     ]
   }
 ]
