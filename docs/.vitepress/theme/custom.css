@@ -67,3 +67,23 @@ pre,
 .plain-hex {
     color: #d4d4d4;
 }
+
+.lemma-box {
+    background: var(--vp-c-bg-soft);
+    border-left: 6px solid #9c27b0;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin: 1.5em 0;
+    position: relative;
+}
+
+.lemma-title {
+    font-weight: 700;
+    font-size: 1.05em;
+    color: #9c27b0;
+    margin-bottom: 0.6em;
+}
+
+.lemma-body {
+    line-height: 1.6;
+}
