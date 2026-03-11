@@ -27,3 +27,7 @@ dist-ssr
 # VitePress defaults
 docs/.vitepress/dist
 docs/.vitepress/cache
+
+
+# temp files
+tmp.md

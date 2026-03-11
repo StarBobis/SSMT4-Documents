@@ -16,5 +16,6 @@ export default {
 
         // 自定义组件
         ctx.app.component('DarkWatcher', DarkWatcher)
+
     },
 } satisfies Theme

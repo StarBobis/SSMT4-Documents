@@ -7,6 +7,63 @@ pre,
 .shiki {
     font-family: var(--vp-font-family-mono) !important;
     font-variant-ligatures: contextual;
-    font-feature-settings: "liga" 1, "calt" 1;
+    font-feature-settings:
+        "liga" 1,
+        "calt" 1;
     line-height: 1.5;
+}
+
+.vitepress-pseudo-codeblock {
+    display: block;
+    background: #1e1e1e; /* VitePress 深色背景 */
+    color: #d4d4d4; /* 基础字体色 */
+    border-radius: 8px;
+    padding: 20px 24px;
+    font-family:
+        "JetBrains Mono", "Fira Code", "Cascadia Code", "Roboto Mono",
+        "SF Mono", Monaco, "Andale Mono", "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.28);
+    border: 1px solid #3c3c3c;
+    overflow-x: auto;
+    white-space: pre;
+    word-spacing: 0.2em;
+    tab-size: 4;
+} /* 完全复刻 VitePress 代码块内部样式 —— 没有任何背景干扰，纯色块 */
+.vitepress-pseudo-codeblock span {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+} /* 十六进制数字 —— 清爽青蓝色，类似常量/数字 */
+.hex-byte {
+    color: #9cdcfe; /* VS Code 数字蓝 */
+} /* x86 操作码(opcode) 醒目的暖金色 —— 一眼定位指令起点 */
+.x86-opcode {
+    color: #ffd700; /* 金，亮眼但不刺 */
+    font-weight: 500;
+} /* ModRM + SIB 字节 —— 典藏青绿，表示寻址模式 */
+.x86-modrm {
+    color: #4ec9b0; /* 绿松石，明显区别于操作码 */
+} /* 位移/立即数 —— 亮橘红，突出常数 */
+.x86-imm {
+    color: #f08d49; /* 珊瑚橘 */
+} /* 指针/重定位/节名称标记 —— 紫罗兰，象征元数据 */
+.section-tag {
+    color: #c586c0; /* 紫，用于 .text .data 等 */
+} /* ASCII 释义区（竖线右侧） —— 保留原有的低饱和绿灰 */
+.ascii-art {
+    color: #6a9955; /* 注释绿，柔和 */
+} /* 完全保留原有空白、缩进、管道符风格 */
+.hex-sep {
+    color: #808080; /* 分隔符灰 */
+} /* 偏移量地址区 —— 茶色，稳重 */
+.offset-addr {
+    color: #b5cea8; /* 浅翠绿 */
+} /* 自定义高亮：PE头特征、调用约定标记等 —— 柔红点缀 */
+.pe-magic {
+    color: #ff7b72; /* 浅珊瑚红 */
+} /* 纯文本降级 —— 不加任何额外背景 */
+.plain-hex {
+    color: #d4d4d4;
 }
