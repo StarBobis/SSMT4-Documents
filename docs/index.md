@@ -3,16 +3,14 @@
 layout: home
 
 hero:
-  name: "SSMT4-Documents"
-  text: "Documents for SSMT4"
-  tagline: My great project tagline
+  name: "SSMT4"
+  text: "基于3Dmigoto的Mod工具箱"
+  tagline: 为热爱而生
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 新手教程
+      link: /newbie/ssmt/Index/Index
+
 
 features:
   - title: Feature A

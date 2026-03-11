@@ -6,7 +6,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: 'SSMT',
       items: [
         { text: 'SSMT介绍', link: '/newbie/ssmt/Index/Index' },
-        { text: 'HowToCreateNewConfig', link: '/newbie/ssmt/HowToCreateNewConfig/HowToCreateNewConfig' }
+        { text: '如何创建新游戏配置', link: '/newbie/ssmt/HowToCreateNewConfig/HowToCreateNewConfig' }
       ]
     }
   ],
