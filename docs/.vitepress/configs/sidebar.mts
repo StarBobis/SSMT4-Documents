@@ -1,6 +1,15 @@
 import type { DefaultTheme } from 'vitepress'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = {
+  '/newbie/': [
+    {
+      text: 'SSMT',
+      items: [
+        { text: 'SSMT介绍', link: '/newbie/ssmt/Index/Index' },
+        { text: 'HowToCreateNewConfig', link: '/newbie/ssmt/HowToCreateNewConfig/HowToCreateNewConfig' }
+      ]
+    }
+  ],
   '/developer/': [
     {
       text: 'VitePress2.0文档',
