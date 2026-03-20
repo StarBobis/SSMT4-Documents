@@ -15,6 +15,7 @@ SSMT4是一款非常简单的基于3Dmigoto的综合Mod工具箱
 - NMBT前身是3Dmigoto-Wheel，一个使用Json文件配置好之后，直接运行的C++内核的exe控制台程序
 - 3Dmigoto-Wheel的前身是3Dmigoto-Tailor，一个综合性的Python脚本工具集
 
+> SSMT第一个版本诞生于2022年，至今已持续更新并开发运维4年时间
 # 设计哲学
 - 简单
 
@@ -30,7 +31,7 @@ SSMT4是一款非常简单的基于3Dmigoto的综合Mod工具箱
 
 # 天生支持把Mod导入Blender二次编辑用于修复旧Mod
 
-我一般称之为Mod逆向，但其本质并非“逆向”，而是对Mod文件做一个数据格式转换，使得它能够被导入到Blender中。
+> 我一般称之为Mod逆向，但其本质并非“逆向”，而是对Mod文件做一个数据格式转换，使得它能够被导入到Blender中。
 
 SSMT系列工具从第一个版本诞生至今，每个版本都天生支持Mod逆向。
 
