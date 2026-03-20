@@ -9,6 +9,10 @@ export const nav: DefaultTheme.Config['nav'] = [
       {
         text: 'SSMT',
         link: '/newbie/ssmt/Index/Index'
+      },
+      {
+        text: 'Reverse',
+        link: '/newbie/reverse/Introduction/Introduction'
       }
     ]
   },

@@ -6,7 +6,16 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: 'SSMT',
       items: [
         { text: 'SSMT介绍', link: '/newbie/ssmt/Index/Index' },
-        { text: '如何创建新游戏配置', link: '/newbie/ssmt/HowToCreateNewConfig/HowToCreateNewConfig' }
+        { text: '下载与安装', link: '/newbie/ssmt/DownloadAndInstall/DownloadAndInstall' },
+        { text: '如何创建新游戏配置', link: '/newbie/ssmt/HowToCreateNewConfig/HowToCreateNewConfig' },
+
+      ]
+    },
+    {
+      text: 'Mod自动逆向',
+      items: [
+        { text: '介绍', link: '/newbie/reverse/Introduction/Introduction' },
+        { text: '如何激活自动逆向', link: '/newbie/reverse/HowToActivateAutoReverse/HowToActivateAutoReverse' }
       ]
     }
   ],
