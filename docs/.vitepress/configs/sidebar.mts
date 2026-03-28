@@ -11,6 +11,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '开始游戏前的配置', link: '/newbie/ssmt/ConfigBeforeStartGame/ConfigBeforeStartGame' },
         //CantUse3DmigotoInjector
         { text: '无法使用3Dmigoto注入器?', link: '/newbie/ssmt/CantUse3DmigotoInjector/CantUse3DmigotoInjector' },
+        //无法注入3Dmigoto
+        { text: '无法注入3Dmigoto?', link: '/newbie/ssmt/CantInject3Dmigoto/CantInject3Dmigoto' },
       ]
     },
     {
