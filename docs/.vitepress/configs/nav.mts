@@ -21,13 +21,17 @@ export const nav: DefaultTheme.Config['nav'] = [
     activeMatch: '/games/',
     items: [
       {
+        text: '原神',
+        link: '/games/gimi/HowToSolveErrorCode/HowToSolveErrorCode'
+      },
+      {
         text: '崩坏:星穹铁道',
         link: '/games/srmi/CantDumpFullBody/CantDumpFullBody'
       },
       {
         text: '燕云十六声',
         link: '/games/yysls/BasicConfig/BasicConfig'
-      }
+      },
     ]
   },
   { 

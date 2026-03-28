@@ -77,6 +77,12 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   ],
   '/games/': [
     {
+      text: '原神',
+      items: [
+        { text: '10612-4001修复方法', link: '/games/gimi/HowToSolveErrorCode/HowToSolveErrorCode' }
+      ]
+    },
+    {
       text: '崩坏:星穹铁道',
       items: [
         { text: '无法导出完整角色体型', link: '/games/srmi/CantDumpFullBody/CantDumpFullBody' }
@@ -88,6 +94,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: 'YYSLS基础配置', link: '/games/yysls/BasicConfig/BasicConfig' }
       ]
     },
+
   ],
   '/': [
     {
