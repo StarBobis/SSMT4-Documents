@@ -109,6 +109,14 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '无法导出完整角色体型', link: '/games/srmi/CantDumpFullBody/CantDumpFullBody' }
       ]
     },
+    //D3dxIniChanges
+    {
+      text: '明日方舟:终末地',
+      items: [
+        { text: 'd3dx.ini特殊变更', link: '/games/efmi/D3dxIniChanges/D3dxIniChanges' },
+        { text: '贴图通道作用', link: '/games/efmi/TextureChannels/TextureChannels' }
+      ]
+    },
     {
       text: '燕云十六声',
       items: [
@@ -120,6 +128,30 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/': [
     {
       text: '前方的区域，以后再来探索吧'
+    }
+  ],
+  '/blender/':[
+    {
+      text: 'Blender',
+      items: [
+        { text: '如何实时查看顶点数量', link: '/blender/AlwaysSeeVertexNumber/AlwaysSeeVertexNumber' },
+        { text: '反细分来减少边对接顶点数', link: '/blender/JieTouBaWang/JieTouBaWang' },
+        { text: '撤销次数一定要拉高', link: '/blender/MoreCtrlZSteps/MoreCtrlZSteps' },
+        { text: '去掉启动时的卡片', link: '/blender/RemoveStartTips/RemoveStartTips' },
+        { text: '恢复默认布局', link: '/blender/RestoreDefaultLayout/RestoreDefaultLayout' },
+        { text: '如何选择一圈的边', link: '/blender/SelectEdge/SelectEdge' },
+        { text: '按C刷选面或顶点', link: '/blender/SelectFaceOrVertex/SelectFaceOrVertex' },
+        { text: '传递UV映射', link: '/blender/TransferUV/TransferUV' },
+        { text: '决定系统使用哪个版本打开.blend文件', link: '/blender/WhichBlenderToOpen/WhichBlenderToOpen' },
+      ]
+    }
+  ],
+  '/migoto/':[
+    {
+      text: '3Dmigoto',
+      items: [
+        { text: '默认顶点数量突破问题', link: '/migoto/Extra_VertexNumberRaise/Extra_VertexNumberRaise' },
+      ]
     }
   ]
 }

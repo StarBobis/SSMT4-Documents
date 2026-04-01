@@ -13,6 +13,14 @@ export const nav: DefaultTheme.Config['nav'] = [
       {
         text: 'Reverse',
         link: '/newbie/reverse/Introduction/Introduction'
+      },
+      {
+        text: '3Dmigoto',
+        link: '/migoto/Extra_VertexNumberRaise/Extra_VertexNumberRaise'
+      },
+      {
+        text: 'Blender',
+        link: '/blender/AlwaysSeeVertexNumber/AlwaysSeeVertexNumber'
       }
     ]
   },
@@ -27,6 +35,10 @@ export const nav: DefaultTheme.Config['nav'] = [
       {
         text: '崩坏:星穹铁道',
         link: '/games/srmi/CantDumpFullBody/CantDumpFullBody'
+      },
+      {
+        text: '明日方舟:终末地',
+        link: '/games/efmi/D3dxIniChanges/D3dxIniChanges'
       },
       {
         text: '燕云十六声',

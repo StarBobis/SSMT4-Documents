@@ -14,3 +14,7 @@
 ## 📚 学习建议
 
 不管是哪一种，都需要你学会骨骼绑定，所以现在就去补 Blender 基础之骨骼绑定吧。
+
+需要自己绑定MMD骨骼，推荐看这个BiliBili视频合集：
+
+https://space.bilibili.com/373989566/lists/2229922?type=season
