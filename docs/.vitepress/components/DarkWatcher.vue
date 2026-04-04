@@ -1,18 +1,27 @@
 <script setup>
 import { ref, onBeforeUnmount } from 'vue'
 
-const checkDark = () => document.documentElement.classList.contains('dark')
+const isClient = typeof document !== 'undefined'
+const checkDark = () => (isClient ? document.documentElement.classList.contains('dark') : false)
 const isDark = ref(checkDark())
-const observer = new MutationObserver(() => {
-    isDark.value = checkDark()
-})
 
-observer.observe(document.documentElement, {
-    attributes: true,
-    attributeFilter: ['class']
-})
+let observer = null
+if (isClient) {
+    observer = new MutationObserver(() => {
+        isDark.value = checkDark()
+    })
 
-onBeforeUnmount(() => observer.disconnect())
+    observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['class']
+    })
+}
+
+onBeforeUnmount(() => {
+    if (observer) {
+        observer.disconnect()
+    }
+})
 </script>
 
 <template>

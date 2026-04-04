@@ -10,12 +10,13 @@ export default defineConfig({
   base: "/SSMT4-Documents/",
   title: "SSMT4-Documents",
   description: "Documents for SSMT4",
+  appearance: true,
 
   themeConfig: {
     nav,
     sidebar,
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/StarBobis/SSMT4-Alpha' }
     ],
     search: {
       provider: 'local'
