@@ -28,7 +28,7 @@ const disableEffects = () => {
   // Remove video
   if (videoElement.value) {
     videoElement.value.pause()
-    videoElement.value.src = ''
+    videoElement.value.removeAttribute('src')
     videoElement.value.load()
     videoElement.value.remove()
     videoElement.value = null
@@ -38,9 +38,7 @@ const disableEffects = () => {
       // @ts-ignore
       el.pause()
       // @ts-ignore
-      const src = el.src
-      // @ts-ignore
-      el.src = ''
+      el.removeAttribute('src')
       // @ts-ignore
       el.load()
       el.remove()
@@ -85,7 +83,6 @@ const createVideoElement = (src) => {
 
   const video = document.createElement('video')
   video.className = 'bg-video'
-  video.src = src
   video.autoplay = true
   video.muted = true
   video.loop = true
@@ -119,10 +116,13 @@ const createVideoElement = (src) => {
     })
   }
 
+  video.addEventListener('loadeddata', tryPlay, { once: true })
   video.addEventListener('canplay', tryPlay, { once: true })
   video.addEventListener('error', () => {
     if (src.endsWith('.webm')) {
       video.pause()
+      video.removeAttribute('src')
+      video.load()
       video.remove()
       if (videoElement.value === video) {
         videoElement.value = null
@@ -132,6 +132,13 @@ const createVideoElement = (src) => {
       isLoading.value = false
     }
   }, { once: true })
+
+  video.src = src
+  video.load()
+
+  if (video.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
+    tryPlay()
+  }
 }
 
 onMounted(() => {

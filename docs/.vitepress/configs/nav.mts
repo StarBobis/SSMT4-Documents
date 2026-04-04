@@ -21,6 +21,10 @@ export const nav: DefaultTheme.Config['nav'] = [
       {
         text: 'Blender',
         link: '/blender/AlwaysSeeVertexNumber/AlwaysSeeVertexNumber'
+      },
+      {
+        text: 'Tools',
+        link: '/newbie/tools/PaintDotNet/PaintDotNet'
       }
     ]
   },
@@ -44,6 +48,30 @@ export const nav: DefaultTheme.Config['nav'] = [
         text: '燕云十六声',
         link: '/games/yysls/BasicConfig/BasicConfig'
       },
+      {
+        text: '少女前线2:追放',
+        link: '/games/gf2/ModelReductionAndOffset/ModelReductionAndOffset'
+      },
+      {
+        text: '崩坏3',
+        link: '/games/himi/OutlineFix/OutlineFix'
+      },
+      {
+        text: '第五人格',
+        link: '/games/identityv/NeoX3Guide/NeoX3Guide'
+      },
+      {
+        text: 'Liar\'s Bar',
+        link: '/games/liarsbar/PistolModelIssue/PistolModelIssue'
+      },
+      {
+        text: '鸣潮',
+        link: '/games/wwmi/HowToFixTextureBug/HowToFixTextureBug'
+      },
+      {
+        text: '绝区零',
+        link: '/games/zzmi/T001ExtractModel/T001ExtractModel'
+      }
     ]
   },
   { 
