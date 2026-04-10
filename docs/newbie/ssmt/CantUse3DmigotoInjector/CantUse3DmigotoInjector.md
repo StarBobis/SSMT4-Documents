@@ -8,7 +8,7 @@ SSMT4使用Run.exe来注入3Dmigoto到目标进程，它本身是基于原始3Dm
 
 解决这个问题有两种方式：
 
-## 1.彻底关闭Smart Screen，即基于声誉的保护
+## 彻底关闭Smart Screen，即基于声誉的保护
 
 设置中搜索smart，即可出现：
 
@@ -20,6 +20,15 @@ SSMT4使用Run.exe来注入3Dmigoto到目标进程，它本身是基于原始3Dm
 
 ![alt text](image-2.png)
 
+## 关闭智能应用控制
+
+打开设置，搜索：智能应用控制：
+
+![alt text](image.png)
+
+随后将其关闭，防止SSMT的程序被误杀导致无法正常使用
+
+![alt text](image-4.png)
 
 ## 2.手动运行一次SSMT4安装目录下的resources目录下的Run.exe
 
@@ -33,17 +42,4 @@ SSMT4使用Run.exe来注入3Dmigoto到目标进程，它本身是基于原始3Dm
 
 所以推荐第一种方式。
 
-## 3.如果实在不信任SSMT4的注入器😂
-
-你也可以将3Dmigoto目录选择为其它启动器，例如XXMI Launcher下面的3Dmigoto目录
-
-随后每次启动时，都使用XXMI Launcher启动，SSMT仅用于模型提取和Mod管理等等其它功能
-
-SSMT的设计是专门为Mod作者优化过的，所以灵活性拉满，你可以自由选择搭配方式。
-
-另外，Run.exe这个注入器是开源的，源码就在：https://github.com/StarBobis/SSMT/tree/main/3Dmigoto-Injector-V2
-
-有条件可自行编译后，替换resources目录下原本的Run.exe来使用
-
-另外，如果有条件且强迫症驱使，你可以自行使用IDA Pro反编译Run.exe验证其执行流程与安全性。
 
