@@ -140,37 +140,37 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       ]
     }
   ],
-  '/games/gimi/': [
-    {
-      text: '原神',
-      items: [
-        { text: '10612-4001修复方法', link: '/games/gimi/HowToSolveErrorCode/HowToSolveErrorCode' },
-        { text: '颜色不匹配问题', link: '/games/gimi/ColorMismatch/ColorMismatch' },
-        { text: '脸部隐藏问题', link: '/games/gimi/FaceHidingIssue/FaceHidingIssue' },
-        { text: 'Mod扭曲或失效', link: '/games/gimi/ModDistortion/ModDistortion' },
-        { text: 'Mod边缘剧烈抖动', link: '/games/gimi/ModIsShaking/ModIsShaking' },
-        { text: 'OR Fix与NN Fix', link: '/games/gimi/ORFixAndNNFix/ORFixAndNNFix' },
-        { text: '轮廓线修复', link: '/games/gimi/OutlineFix/OutlineFix' },
-      ]
-    }
-  ],
-  '/games/srmi/': [
-    {
-      text: '崩坏:星穹铁道',
-      items: [
-        { text: '无法导出完整角色体型', link: '/games/srmi/CantDumpFullBody/CantDumpFullBody' },
-        { text: '动作Mod崩溃或异常', link: '/games/srmi/ActionModCrash/ActionModCrash' },
-        { text: 'AI插针导致Mod炸裂', link: '/games/srmi/AIBrokeMods/AIBrokeMods' },
-        { text: '动态Mod轮廓线闪烁', link: '/games/srmi/DynamicModOutlineGlitch/DynamicModOutlineGlitch' },
-        { text: '无法正常提取模型', link: '/games/srmi/HowToDump/HowToDump' },
-        { text: '轮廓线修复', link: '/games/srmi/OutlineFix/OutlineFix' },
-        { text: '槽位风格贴图问题', link: '/games/srmi/SlotStyleTextureProblem/SlotStyleTextureProblem' },
-        { text: '匹诺康尼贴图问题', link: '/games/srmi/TextureSlotIssue/TextureSlotIssue' },
-        { text: 'UV2解析', link: '/games/srmi/WhatIsUV2/WhatIsUV2' },
-        { text: '黄边问题修复', link: '/games/srmi/YellowOutlineFix/YellowOutlineFix' }
-      ]
-    }
-  ],
+  // '/games/gimi/': [
+  //   {
+  //     text: '原神',
+  //     items: [
+  //       { text: '10612-4001修复方法', link: '/games/gimi/HowToSolveErrorCode/HowToSolveErrorCode' },
+  //       { text: '颜色不匹配问题', link: '/games/gimi/ColorMismatch/ColorMismatch' },
+  //       { text: '脸部隐藏问题', link: '/games/gimi/FaceHidingIssue/FaceHidingIssue' },
+  //       { text: 'Mod扭曲或失效', link: '/games/gimi/ModDistortion/ModDistortion' },
+  //       { text: 'Mod边缘剧烈抖动', link: '/games/gimi/ModIsShaking/ModIsShaking' },
+  //       { text: 'OR Fix与NN Fix', link: '/games/gimi/ORFixAndNNFix/ORFixAndNNFix' },
+  //       { text: '轮廓线修复', link: '/games/gimi/OutlineFix/OutlineFix' },
+  //     ]
+  //   }
+  // ],
+  // '/games/srmi/': [
+  //   {
+  //     text: '崩坏:星穹铁道',
+  //     items: [
+  //       { text: '无法导出完整角色体型', link: '/games/srmi/CantDumpFullBody/CantDumpFullBody' },
+  //       { text: '动作Mod崩溃或异常', link: '/games/srmi/ActionModCrash/ActionModCrash' },
+  //       { text: 'AI插针导致Mod炸裂', link: '/games/srmi/AIBrokeMods/AIBrokeMods' },
+  //       { text: '动态Mod轮廓线闪烁', link: '/games/srmi/DynamicModOutlineGlitch/DynamicModOutlineGlitch' },
+  //       { text: '无法正常提取模型', link: '/games/srmi/HowToDump/HowToDump' },
+  //       { text: '轮廓线修复', link: '/games/srmi/OutlineFix/OutlineFix' },
+  //       { text: '槽位风格贴图问题', link: '/games/srmi/SlotStyleTextureProblem/SlotStyleTextureProblem' },
+  //       { text: '匹诺康尼贴图问题', link: '/games/srmi/TextureSlotIssue/TextureSlotIssue' },
+  //       { text: 'UV2解析', link: '/games/srmi/WhatIsUV2/WhatIsUV2' },
+  //       { text: '黄边问题修复', link: '/games/srmi/YellowOutlineFix/YellowOutlineFix' }
+  //     ]
+  //   }
+  // ],
   '/games/efmi/': [
     //D3dxIniChanges
     {
@@ -201,15 +201,15 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       ]
     }
   ],
-  '/games/himi/': [
-    {
-      text: '崩坏3',
-      items: [
-        { text: '轮廓线修复', link: '/games/himi/OutlineFix/OutlineFix' },
-        { text: 'Second UV Map用途', link: '/games/himi/SecondUVMapUsage/SecondUVMapUsage' }
-      ]
-    }
-  ],
+  // '/games/himi/': [
+  //   {
+  //     text: '崩坏3',
+  //     items: [
+  //       { text: '轮廓线修复', link: '/games/himi/OutlineFix/OutlineFix' },
+  //       { text: 'Second UV Map用途', link: '/games/himi/SecondUVMapUsage/SecondUVMapUsage' }
+  //     ]
+  //   }
+  // ],
   // '/games/identityv/': [
   //   {
   //     text: '第五人格',
@@ -236,30 +236,30 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       ]
     }
   ],
-  '/games/zzmi/': [
-    {
-      text: '绝区零',
-      items: [
-        { text: '爱丽丝的剑消失问题', link: '/games/zzmi/AliceSwordDisappear/AliceSwordDisappear' },
-        { text: '上下身体分开问题', link: '/games/zzmi/BodySeparationIssue/BodySeparationIssue' },
-        { text: '禁用动态高精度', link: '/games/zzmi/DisableDynamicHighPrecision/DisableDynamicHighPrecision' },
-        { text: 'FakeHair问题', link: '/games/zzmi/FakeHairIssue/FakeHairIssue' },
-        { text: '法线贴图错误', link: '/games/zzmi/NormalMapError/NormalMapError' },
-        { text: '完美阴影与轮廓线', link: '/games/zzmi/PerfectShadowAndOutline/PerfectShadowAndOutline' },
-        // { text: '教程: 提取模型', link: '/games/zzmi/T001ExtractModel/T001ExtractModel' },
-        // { text: '教程: 准备篇', link: '/games/zzmi/T002Preparation/T002Preparation' },
-        // { text: '教程: 基础调整篇', link: '/games/zzmi/T003BasicAdjustments/T003BasicAdjustments' },
-        // { text: '教程: 拆分MMD模型', link: '/games/zzmi/T004SplitMMD/T004SplitMMD' },
-        // { text: '教程: 原模型处理篇', link: '/games/zzmi/T005ProcessOriginal/T005ProcessOriginal' },
-        // { text: '教程: 顶点组自动改名篇', link: '/games/zzmi/T006VertexGroupRenaming/T006VertexGroupRenaming' },
-        // { text: '教程: 合并篇', link: '/games/zzmi/T007Merging/T007Merging' },
-        // { text: '教程: 顶点组处理篇', link: '/games/zzmi/T008Finalizing/T008Finalizing' },
-        // { text: '教程: 生成Mod与贴图篇', link: '/games/zzmi/T009GenerateMod/T009GenerateMod' },
-        // { text: '教程: 处理贴图大小问题', link: '/games/zzmi/T010ProcessTextureProblem/T010ProcessTextureProblem' }
-      ]
-    }
+  // '/games/zzmi/': [
+  //   {
+  //     text: '绝区零',
+  //     items: [
+  //       { text: '爱丽丝的剑消失问题', link: '/games/zzmi/AliceSwordDisappear/AliceSwordDisappear' },
+  //       { text: '上下身体分开问题', link: '/games/zzmi/BodySeparationIssue/BodySeparationIssue' },
+  //       { text: '禁用动态高精度', link: '/games/zzmi/DisableDynamicHighPrecision/DisableDynamicHighPrecision' },
+  //       { text: 'FakeHair问题', link: '/games/zzmi/FakeHairIssue/FakeHairIssue' },
+  //       { text: '法线贴图错误', link: '/games/zzmi/NormalMapError/NormalMapError' },
+  //       { text: '完美阴影与轮廓线', link: '/games/zzmi/PerfectShadowAndOutline/PerfectShadowAndOutline' },
+  //       // { text: '教程: 提取模型', link: '/games/zzmi/T001ExtractModel/T001ExtractModel' },
+  //       // { text: '教程: 准备篇', link: '/games/zzmi/T002Preparation/T002Preparation' },
+  //       // { text: '教程: 基础调整篇', link: '/games/zzmi/T003BasicAdjustments/T003BasicAdjustments' },
+  //       // { text: '教程: 拆分MMD模型', link: '/games/zzmi/T004SplitMMD/T004SplitMMD' },
+  //       // { text: '教程: 原模型处理篇', link: '/games/zzmi/T005ProcessOriginal/T005ProcessOriginal' },
+  //       // { text: '教程: 顶点组自动改名篇', link: '/games/zzmi/T006VertexGroupRenaming/T006VertexGroupRenaming' },
+  //       // { text: '教程: 合并篇', link: '/games/zzmi/T007Merging/T007Merging' },
+  //       // { text: '教程: 顶点组处理篇', link: '/games/zzmi/T008Finalizing/T008Finalizing' },
+  //       // { text: '教程: 生成Mod与贴图篇', link: '/games/zzmi/T009GenerateMod/T009GenerateMod' },
+  //       // { text: '教程: 处理贴图大小问题', link: '/games/zzmi/T010ProcessTextureProblem/T010ProcessTextureProblem' }
+  //     ]
+  //   }
 
-  ],
+  // ],
   '/': [
     {
       text: '前方的区域，以后再来探索吧'
