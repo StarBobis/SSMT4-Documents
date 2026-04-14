@@ -246,16 +246,16 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: 'FakeHair问题', link: '/games/zzmi/FakeHairIssue/FakeHairIssue' },
         { text: '法线贴图错误', link: '/games/zzmi/NormalMapError/NormalMapError' },
         { text: '完美阴影与轮廓线', link: '/games/zzmi/PerfectShadowAndOutline/PerfectShadowAndOutline' },
-        { text: '教程: 提取模型', link: '/games/zzmi/T001ExtractModel/T001ExtractModel' },
-        { text: '教程: 准备篇', link: '/games/zzmi/T002Preparation/T002Preparation' },
-        { text: '教程: 基础调整篇', link: '/games/zzmi/T003BasicAdjustments/T003BasicAdjustments' },
-        { text: '教程: 拆分MMD模型', link: '/games/zzmi/T004SplitMMD/T004SplitMMD' },
-        { text: '教程: 原模型处理篇', link: '/games/zzmi/T005ProcessOriginal/T005ProcessOriginal' },
-        { text: '教程: 顶点组自动改名篇', link: '/games/zzmi/T006VertexGroupRenaming/T006VertexGroupRenaming' },
-        { text: '教程: 合并篇', link: '/games/zzmi/T007Merging/T007Merging' },
-        { text: '教程: 顶点组处理篇', link: '/games/zzmi/T008Finalizing/T008Finalizing' },
-        { text: '教程: 生成Mod与贴图篇', link: '/games/zzmi/T009GenerateMod/T009GenerateMod' },
-        { text: '教程: 处理贴图大小问题', link: '/games/zzmi/T010ProcessTextureProblem/T010ProcessTextureProblem' }
+        // { text: '教程: 提取模型', link: '/games/zzmi/T001ExtractModel/T001ExtractModel' },
+        // { text: '教程: 准备篇', link: '/games/zzmi/T002Preparation/T002Preparation' },
+        // { text: '教程: 基础调整篇', link: '/games/zzmi/T003BasicAdjustments/T003BasicAdjustments' },
+        // { text: '教程: 拆分MMD模型', link: '/games/zzmi/T004SplitMMD/T004SplitMMD' },
+        // { text: '教程: 原模型处理篇', link: '/games/zzmi/T005ProcessOriginal/T005ProcessOriginal' },
+        // { text: '教程: 顶点组自动改名篇', link: '/games/zzmi/T006VertexGroupRenaming/T006VertexGroupRenaming' },
+        // { text: '教程: 合并篇', link: '/games/zzmi/T007Merging/T007Merging' },
+        // { text: '教程: 顶点组处理篇', link: '/games/zzmi/T008Finalizing/T008Finalizing' },
+        // { text: '教程: 生成Mod与贴图篇', link: '/games/zzmi/T009GenerateMod/T009GenerateMod' },
+        // { text: '教程: 处理贴图大小问题', link: '/games/zzmi/T010ProcessTextureProblem/T010ProcessTextureProblem' }
       ]
     }
 

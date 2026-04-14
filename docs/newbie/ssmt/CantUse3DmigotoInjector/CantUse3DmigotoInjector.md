@@ -4,11 +4,9 @@ SSMT4使用Run.exe来注入3Dmigoto到目标进程，它本身是基于原始3Dm
 
 由于包含注入代码，且并未长期单独包含在Github的发布页，所以未被微软SmartScreen收录
 
-所以100%会被微软的Smart Screen拦截，导致我们在点击开始游戏按钮后，无法启动3Dmigoto注入器，也就是Run.exe
+所以100%会被微软的Smart Screen拦截，导致我们在点击开始游戏按钮后，无法启动3Dmigoto注入器，也就是Run.exe，看起来就像是点击开始游戏按钮后，直接启动了游戏一样，没有显示3Dmigoto注入器的启动窗口
 
-解决这个问题有两种方式：
-
-## 彻底关闭Smart Screen，即基于声誉的保护
+## 彻底关闭基于声誉的保护（关闭Smart Screen）
 
 设置中搜索smart，即可出现：
 
@@ -30,7 +28,7 @@ SSMT4使用Run.exe来注入3Dmigoto到目标进程，它本身是基于原始3Dm
 
 ![alt text](image-4.png)
 
-## 2.手动运行一次SSMT4安装目录下的resources目录下的Run.exe
+## 手动运行一次SSMT4安装目录下的resources目录下的Run.exe
 
 第一次运行会弹出提示说不认识这个文件，无脑运行就可以了
 
