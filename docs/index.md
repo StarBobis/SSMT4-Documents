@@ -7,9 +7,6 @@ hero:
   text: "基于3Dmigoto的Mod工具箱"
   tagline: 为热爱而生
   actions:
-    - theme: brand
-      text: 新手教程
-      link: /newbie/ssmt/Index/Index
     - theme: alt
       text: SSMT4下载地址
       link: https://github.com/StarBobis/SSMT4-Alpha
