@@ -70,6 +70,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '删除骨骼约束', link: '/newbie/theherta4/RemoveBoneConstraints/RemoveBoneConstraints' },
         { text: '平滑法线存TEXCOORD1.xy', link: '/newbie/theherta4/SmoothNormalToTEXCOORD1/SmoothNormalToTEXCOORD1' },
         { text: '模型细分后权重问题', link: '/newbie/theherta4/SubdivisionWeightIssue/SubdivisionWeightIssue' },
+        //SwitchAndToggle
+        { text: '蓝图实现按键开关和按键切换', link: '/newbie/theherta4/SwitchAndToggle/SwitchAndToggle' },
       ]
     }
   ],
