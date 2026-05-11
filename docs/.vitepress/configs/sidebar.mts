@@ -235,6 +235,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     {
       text: '鸣潮',
       items: [
+        { text: '基础信息', link: '/games/wwmi/BaseInfo/BaseInfo' },
         { text: '版本更新后贴图炸裂修复', link: '/games/wwmi/HowToFixTextureBug/HowToFixTextureBug' },
         { text: '一键启动路径配置', link: '/games/wwmi/ProcessPathConfig/ProcessPathConfig' }
       ]
