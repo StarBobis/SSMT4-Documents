@@ -87,6 +87,16 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       ]
     }
   ],
+  '/newbie/faq/': [
+    {
+      text: '常见问题',
+      items: [
+        { text: '基础信息', link: '/newbie/faq/BaseInfo/BaseInfo' },
+        { text: '软件在哪下载', link: '/newbie/faq/WhereGetSoftware/WhereGetSoftware' },
+        
+      ]
+    }
+  ],
   '/developer/vitepress/': [
     {
       text: 'VitePress2.0文档',

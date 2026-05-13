@@ -29,7 +29,11 @@ export const nav: DefaultTheme.Config['nav'] = [
       {
         text: 'Tools',
         link: '/newbie/tools/PaintDotNet/PaintDotNet'
-      }
+      },
+      {
+        text: 'FAQ',
+        link: '/newbie/faq/BaseInfo/BaseInfo'
+      },
     ]
   },
   {
