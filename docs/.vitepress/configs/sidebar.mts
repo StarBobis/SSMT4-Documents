@@ -38,7 +38,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '教程: 手动逆向功能', link: '/newbie/reverse/ManualReverse/ManualReverse' },
         
         { text: '案例: 原神脸部Mod', link: '/newbie/reverse/GenshinFaceReverse/GenshinFaceReverse' },
-        { text: '案例: 跨IB渲染 Mod', link: '/newbie/reverse/CrossIBReverse/CrossIBReverse' },
+        //{ text: '案例: 跨IB渲染 Mod', link: '/newbie/reverse/CrossIBReverse/CrossIBReverse' },
         { text: '案例: 使用TexFx插件的Mod', link: '/newbie/reverse/Case_DrawWithTexFx/Case_DrawWithTexFx' },
         { text: '案例: Buffer 膨胀混淆技术', link: '/newbie/reverse/BufferInflationObfuscation/BufferInflationObfuscation' },
         { text: '案例: ResourceVBList.size() 为 4 的 Mod', link: '/newbie/reverse/ResourceVBListSize4/ResourceVBListSize4' },
