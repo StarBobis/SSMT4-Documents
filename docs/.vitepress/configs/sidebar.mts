@@ -32,7 +32,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       items: [
         { text: '自动逆向功能介绍', link: '/newbie/reverse/Introduction/Introduction' },
         { text: '教程: 如何激活自动逆向', link: '/newbie/reverse/HowToActivateAutoReverse/HowToActivateAutoReverse' },
-        { text: '教程: 如何正确选择一键逆向选项', link: '/newbie/reverse/T003HowToUseAutoReverse/HowToChooseAutoReverseSelection' },
+        //{ text: '教程: 如何正确选择一键逆向选项', link: '/newbie/reverse/T003HowToUseAutoReverse/HowToChooseAutoReverseSelection' },
         { text: '教程: 一键逆向后导入 Blender', link: '/newbie/reverse/T004ImportIntoBlender/T004ImportIntoBlender' },
         { text: '教程: 筛选正确的数据类型', link: '/newbie/reverse/T005UseCorrectDataType/T005UseCorrectDataType' },
         { text: '教程: 手动逆向功能', link: '/newbie/reverse/ManualReverse/ManualReverse' },
