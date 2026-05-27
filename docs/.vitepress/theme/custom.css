@@ -163,3 +163,46 @@ pre,
 .lemma-body {
     line-height: 1.6;
 }
+
+/* ===== 移动端竖屏：右侧竖排浮动工具栏 ===== */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .nav-custom-actions {
+    position: fixed;
+    right: 10px;
+    top: 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 14px;
+    padding: 8px 4px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  }
+
+  .dark .nav-custom-actions {
+    background: rgba(11, 12, 21, 0.92);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  }
+
+  /* 去掉横向分隔线，改为无间距竖排 */
+  .nav-custom-actions .video-bg-control,
+  .nav-custom-actions .music-control {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .nav-custom-actions .music-control {
+    flex-direction: column;
+    gap: 4px;
+    height: auto;
+  }
+
+  .nav-custom-actions .volume-slider {
+    width: 60px;
+  }
+}
