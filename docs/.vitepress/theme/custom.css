@@ -165,8 +165,8 @@ pre,
 }
 
 /* ===== 移动端导航栏修复 ===== */
-/* 在移动端隐藏自定义导航组件，避免干扰汉堡菜单按钮 */
-@media (max-width: 768px) {
+/* VitePress 在 ≤960px 时显示汉堡菜单，此时隐藏自定义组件避免挤占空间导致菜单失效 */
+@media (max-width: 960px) {
   .video-bg-control,
   .music-control,
   .translate-wrapper {
