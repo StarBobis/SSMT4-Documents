@@ -17,13 +17,7 @@ export default {
 
     Layout() {
         return h(DefaultTheme.Layout, null, {
-            'nav-bar-content-after': () => [
-                h('div', { class: 'nav-custom-actions' }, [
-                    h(EffectSwitch),
-                    h(MusicPlayer),
-                    h(GoogleTranslate)
-                ])
-            ]
+            'nav-bar-content-after': () => [h(EffectSwitch), h(MusicPlayer), h(GoogleTranslate)]
         })
     },
 
