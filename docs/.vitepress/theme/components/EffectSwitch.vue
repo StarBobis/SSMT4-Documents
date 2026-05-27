@@ -83,12 +83,11 @@ const createVideoElement = (src) => {
 
   const video = document.createElement('video')
   video.className = 'bg-video'
-  video.autoplay = true
   video.muted = true
   video.loop = true
   video.preload = 'auto'
   video.playsInline = true
-  
+
   video.style.cssText = `
     position: fixed;
     top: 0;
@@ -107,17 +106,31 @@ const createVideoElement = (src) => {
   document.body.appendChild(video)
   videoElement.value = video
 
-  const tryPlay = () => {
-    video.play().then(() => {
-      video.style.opacity = '0.3'
-      isLoading.value = false
-    }).catch(() => {
-      isLoading.value = false
-    })
+  const showPausedFrame = () => {
+    // Show the video element at its current position (paused) as a static background
+    video.style.opacity = '0.3'
+    isLoading.value = false
   }
 
-  video.addEventListener('loadeddata', tryPlay, { once: true })
-  video.addEventListener('canplay', tryPlay, { once: true })
+  const startPlayback = () => {
+    // Seek to beginning and start normal playback
+    video.currentTime = 0
+    video.play().catch(() => {})
+  }
+
+  video.addEventListener('loadeddata', () => {
+    // Seek to 1s to show a representative paused frame
+    video.currentTime = 1
+    showPausedFrame()
+    // If fully buffered already, start playing immediately
+    if (video.readyState >= HTMLMediaElement.HAVE_ENOUGH_DATA) {
+      startPlayback()
+    }
+  }, { once: true })
+
+  // Fires when the browser has buffered enough data to play through the entire video
+  video.addEventListener('canplaythrough', startPlayback, { once: true })
+
   video.addEventListener('error', () => {
     if (src.endsWith('.webm')) {
       video.pause()
@@ -137,7 +150,11 @@ const createVideoElement = (src) => {
   video.load()
 
   if (video.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
-    tryPlay()
+    video.currentTime = 1
+    showPausedFrame()
+  }
+  if (video.readyState >= HTMLMediaElement.HAVE_ENOUGH_DATA) {
+    startPlayback()
   }
 }
 
