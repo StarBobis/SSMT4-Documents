@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "SSMT4"
-  text: "基于3Dmigoto的Mod工具箱"
+  text: "你的专业Mod工具箱"
   tagline: 为热爱而生
   actions:
     - theme: alt
