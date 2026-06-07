@@ -126,23 +126,26 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         {
           text: '基础语法——猜数游戏', link: '/developer/rust/基础语法——猜数游戏/引入.md', items: [
             {text: '赋值', link: '/developer/rust/基础语法——猜数游戏/赋值.md' },
-            {text: '第三方包依赖', link: '/developer/rust/基础语法——猜数游戏/第 三方包依赖.md' },
+            {text: '第三方包依赖', link: '/developer/rust/基础语法——猜数游戏/第三方包依赖.md' },
             {text: '控制语句和模式匹配', link: '/developer/rust/基础语法——猜数游戏/控制语句和模式匹配.md' },
-            {text: '循环与表达式', link: '/developer/rust/基础语法——猜数游戏/循 环与表达式.md' },
+            {text: '循环与表达式', link: '/developer/rust/基础语法——猜数游戏/循环与表达式.md' },
           ]
         },
         {
           text: '编程语言常识', items: [
             {text: '强类型与弱类型, 静态类型与动态类型', link: '/developer/rust/编程语言常识/强类型与弱类型, 静态类型与动态类型.md' },
-            {text: '编译型和解释型语言', link: '/developer/rust/编程语言常识/编 译型和解释型语言.md'},
-            {text: '栈内存与堆内存', link: '/developer/rust/编程语言常识/栈内存 与堆内存.md' }
+            {text: '编译型和解释型语言', link: '/developer/rust/编程语言常识/编译型和解释型语言.md'},
+            {text: '栈内存与堆内存', link: '/developer/rust/编程语言常识/栈内存与堆内存.md' }
           ]
         },
         {
-          text: '基本语法与数据类型', link: '/developer/rust/基本语法与基本数据 类型/基本语法与基本数据类型.md'
+          text: '基本语法与数据类型', link: '/developer/rust/基本语法与基本数据类型/基本语法与基本数据类型.md'
         },
         {
           text: '函数与控制流', link: '/developer/rust/函数与控制流/函数与控制流.md'
+        },
+        {
+          text: '所有权', link: '/developer/rust/所有权/所有权.md'
         }
       ]
     }
