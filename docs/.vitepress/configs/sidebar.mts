@@ -38,7 +38,6 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '案例: Buffer 膨胀混淆技术', link: '/newbie/reverse/BufferInflationObfuscation/BufferInflationObfuscation' },
         { text: '案例: ResourceVBList.size() 为 4 的 Mod', link: '/newbie/reverse/ResourceVBListSize4/ResourceVBListSize4' },
         { text: '案例: NPC Mod', link: '/newbie/reverse/NPCModReverseIssue/NPCModReverseIssue' },
-        { text: '案例: 鸣潮 Mod', link: '/newbie/reverse/WuWaModReverseProblem/WuWaModReverseProblem' },
 
         { text: '骨骼: 模型绑定骨骼', link: '/newbie/reverse/BindModelToBone/BindModelToBone' },
         { text: '骨骼: 米游游戏原骨骼绑骨', link: '/newbie/reverse/HoyoGamesBone/HoyoGamesBone' },
