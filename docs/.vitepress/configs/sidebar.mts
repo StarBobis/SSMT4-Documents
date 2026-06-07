@@ -9,17 +9,12 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: 'SSMT介绍', link: '/newbie/ssmt/Index/Index' },
         { text: 'SSMT支持哪些游戏', link: '/newbie/ssmt/SSMTSupportedGames/SSMTSupportedGames' },
         { text: '下载与安装', link: '/newbie/ssmt/DownloadAndInstall/DownloadAndInstall' },
-        { text: 'SSMT版本更新指南', link: '/newbie/ssmt/SSMTVersionUpdate/SSMTVersionUpdate' },
-        { text: 'SSMT主页配置指南', link: '/newbie/ssmt/HomePageConfig/HomePageConfig' },
         { text: '如何创建新游戏配置', link: '/newbie/ssmt/HowToCreateNewConfig/HowToCreateNewConfig' },
         { text: '开始游戏前的配置', link: '/newbie/ssmt/ConfigBeforeStartGame/ConfigBeforeStartGame' },
-        { text: '3Dmigoto注入游戏指南', link: '/newbie/ssmt/Inject3DmigotoIntoGame/Inject3DmigotoIntoGame' },
-        { text: 'SSMT运行日志指南', link: '/newbie/ssmt/SSMTRunLogFile/SSMTRunLogFile' },
         //CantUse3DmigotoInjector
         { text: '无法使用3Dmigoto注入器?', link: '/newbie/ssmt/CantUse3DmigotoInjector/CantUse3DmigotoInjector' },
         //无法注入3Dmigoto
         { text: '无法注入3Dmigoto?', link: '/newbie/ssmt/CantInject3Dmigoto/CantInject3Dmigoto' },
-        { text: '无法打开LOD.exe', link: '/newbie/ssmt/CantOpenLODExe/CantOpenLODExe' },
         { text: '找不到数据类型', link: '/newbie/ssmt/CantFindDataType/CantFindDataType' },
         { text: '提取模型有多个数据类型', link: '/newbie/ssmt/ExtractMultipleGameType/ExtractMultipleGameType' },
         { text: 'Dump文件过大处理', link: '/newbie/ssmt/DumpFileTooHuge/DumpFileTooHuge' },
@@ -66,7 +61,6 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: 'Blender插件安装教程', link: '/newbie/theherta4/TheHerta3Installation/TheHerta3Installation' },
         { text: '蓝图架构', link: '/newbie/theherta4/BlueprintArchitecture/BlueprintArchitecture' },
         { text: '投影TEXCOORD2.xy', link: '/newbie/theherta4/ProjectTEXCOORD2/ProjectTEXCOORD2' },
-        { text: '删除骨骼约束', link: '/newbie/theherta4/RemoveBoneConstraints/RemoveBoneConstraints' },
         { text: '平滑法线存TEXCOORD1.xy', link: '/newbie/theherta4/SmoothNormalToTEXCOORD1/SmoothNormalToTEXCOORD1' },
         { text: '模型细分后权重问题', link: '/newbie/theherta4/SubdivisionWeightIssue/SubdivisionWeightIssue' },
         //SwitchAndToggle
@@ -310,6 +304,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: 'MikuMikuDance插件', link: '/blender/MikuMikuDance/MikuMikuDance' },
         { text: 'MikuMikuRig插件', link: '/blender/MikuMikuRig/MikuMikuRig' },
         { text: '撤销次数一定要拉高', link: '/blender/MoreCtrlZSteps/MoreCtrlZSteps' },
+        { text: '删除骨骼约束', link: '/blender/RemoveBoneConstraints/RemoveBoneConstraints' },
         { text: '去掉启动时的卡片', link: '/blender/RemoveStartTips/RemoveStartTips' },
         { text: '恢复默认布局', link: '/blender/RestoreDefaultLayout/RestoreDefaultLayout' },
         { text: 'Screenshot Keys插件', link: '/blender/ScreenshotKeys/ScreenshotKeys' },
