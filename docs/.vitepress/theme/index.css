@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::selection {
-  background: rgba(255, 0, 128, 0.2);
+  background: rgba(235, 92, 32, 0.2);
   color: inherit;
 }
 
@@ -54,11 +54,11 @@ body {
 
 @keyframes textThrob {
   0%, 100% { 
-    text-shadow: 0 0 20px rgba(167, 85, 247, 0.4), 0 0 40px rgba(167, 85, 247, 0.2);
+    text-shadow: 0 0 20px rgba(13, 58, 105, 0.36), 0 0 40px rgba(113, 226, 209, 0.18);
     transform: scale(1);
   }
   50% { 
-    text-shadow: 0 0 30px rgba(255, 0, 128, 0.5), 0 0 60px rgba(255, 0, 128, 0.3);
+    text-shadow: 0 0 30px rgba(1, 139, 141, 0.42), 0 0 60px rgba(249, 212, 108, 0.24);
     transform: scale(1.02);
   }
 }
@@ -72,24 +72,26 @@ body {
   border-radius: 24px !important;
   transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
   z-index: 1;
-  box-shadow: 0 0 15px rgba(167, 85, 247, 0.2);
+  box-shadow: 0 0 15px rgba(13, 58, 105, 0.18);
   animation: buttonPulse 3s ease-in-out infinite;
 }
 
 @keyframes buttonPulse {
-  0% { box-shadow: 0 0 15px rgba(167, 85, 247, 0.2); transform: scale(1); }
-  50% { box-shadow: 0 0 25px rgba(255, 0, 128, 0.4); transform: scale(1.03); }
-  100% { box-shadow: 0 0 15px rgba(167, 85, 247, 0.2); transform: scale(1); }
+  0% { box-shadow: 0 0 15px rgba(13, 58, 105, 0.18); transform: scale(1); }
+  50% { box-shadow: 0 0 25px rgba(1, 139, 141, 0.28); transform: scale(1.03); }
+  100% { box-shadow: 0 0 15px rgba(13, 58, 105, 0.18); transform: scale(1); }
 }
 
 .VPHero .VPButton:hover {
   transform: scale(1.05) translateY(-2px);
-  box-shadow: 0 10px 40px rgba(255, 0, 128, 0.5);
-  background-color: rgba(255, 0, 128, 0.1) !important;
+  box-shadow: 0 10px 40px rgba(1, 139, 141, 0.26);
+  background-color: rgba(113, 226, 209, 0.12) !important;
 }
 
 :not(.dark) .VPHero .VPButton {
-  background-color: rgba(0, 0, 0, 0.05) !important;
+  background:
+    linear-gradient(135deg, rgba(113, 226, 209, 0.16), rgba(249, 212, 108, 0.1)),
+    rgba(255, 255, 255, 0.72) !important;
   color: var(--vp-c-text-1) !important;
   animation: none;
 }
@@ -110,7 +112,7 @@ body {
 }
 
 :not(.dark) .VPHero .VPButton::before {
-  background: linear-gradient(45deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2)); 
+  background: linear-gradient(45deg, rgba(1, 139, 141, 0.24), rgba(0, 47, 167, 0.14), rgba(249, 212, 108, 0.18));
 }
 
 .VPHero .VPButton:hover {
@@ -119,20 +121,38 @@ body {
   animation: none;
 }
 
-.VPHero .VPButton[href*="SSMT3"]:hover {
-  box-shadow: 0 0 20px rgba(0, 198, 255, 0.4), inset 0 0 10px rgba(0, 198, 255, 0.1);
+.VPHero .VPButton[href*="SSMT3"],
+.VPHero .VPButton[href*="SSMT4"] {
+  background:
+    linear-gradient(135deg, rgba(235, 92, 32, 0.16), rgba(200, 22, 29, 0.08)),
+    rgba(255, 255, 255, 0.72) !important;
 }
-.VPHero .VPButton[href*="SSMT3"]:hover::before {
-  background: linear-gradient(90deg, #00c6ff, #0072ff, #00c6ff);
+
+.VPHero .VPButton[href*="SSMT3"]:hover,
+.VPHero .VPButton[href*="SSMT4"]:hover {
+  box-shadow: 0 0 20px rgba(235, 92, 32, 0.32), inset 0 0 10px rgba(249, 212, 108, 0.12);
+}
+.VPHero .VPButton[href*="SSMT3"]:hover::before,
+.VPHero .VPButton[href*="SSMT4"]:hover::before {
+  background: linear-gradient(90deg, var(--ssmt-hermes), var(--ssmt-china-red), var(--ssmt-schonbrunn), var(--ssmt-hermes));
   background-size: 200% 100%;
   animation: borderFlow 2s linear infinite;
 }
 
-.VPHero .VPButton[href*="TheHerta3"]:hover {
-  box-shadow: 0 0 20px rgba(255, 100, 0, 0.4), inset 0 0 10px rgba(255, 100, 0, 0.1);
+.VPHero .VPButton[href*="TheHerta3"],
+.VPHero .VPButton[href*="TheHerta4"] {
+  background:
+    linear-gradient(135deg, rgba(113, 226, 209, 0.16), rgba(0, 47, 167, 0.08)),
+    rgba(255, 255, 255, 0.72) !important;
 }
-.VPHero .VPButton[href*="TheHerta3"]:hover::before {
-  background: linear-gradient(90deg, #ff9966, #ff5e62, #ff9966);
+
+.VPHero .VPButton[href*="TheHerta3"]:hover,
+.VPHero .VPButton[href*="TheHerta4"]:hover {
+  box-shadow: 0 0 20px rgba(1, 139, 141, 0.34), inset 0 0 10px rgba(113, 226, 209, 0.12);
+}
+.VPHero .VPButton[href*="TheHerta3"]:hover::before,
+.VPHero .VPButton[href*="TheHerta4"]:hover::before {
+  background: linear-gradient(90deg, var(--ssmt-tiffany), var(--ssmt-mars), var(--ssmt-klein), var(--ssmt-tiffany));
   background-size: 200% 100%;
   animation: borderFlow 2s linear infinite;
 }
@@ -142,31 +162,40 @@ body {
 }
 
 .VPFeature {
-  background-color: rgba(0, 0, 0, 0.03) !important;
+  background:
+    linear-gradient(135deg, rgba(255, 252, 249, 0.78), rgba(113, 226, 209, 0.08)) !important;
   backdrop-filter: blur(10px);
-  border: 1px solid transparent !important;
+  border: 1px solid rgba(1, 139, 141, 0.14) !important;
   border-radius: 12px;
   transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
               box-shadow 0.4s ease,
-              background-color 0.4s ease;
+              background 0.4s ease;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
 .dark .VPFeature {
-  background-color: rgba(255, 255, 255, 0.05) !important;
+  background:
+    linear-gradient(135deg, rgba(13, 58, 105, 0.22), rgba(113, 226, 209, 0.08)) !important;
+  border-color: rgba(113, 226, 209, 0.18) !important;
 }
 
 .VPFeature:hover {
   transform: translateY(-2px);
-  background-color: rgba(0, 0, 0, 0.05) !important;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background:
+    linear-gradient(135deg, rgba(113, 226, 209, 0.16), rgba(249, 212, 108, 0.1)),
+    rgba(255, 255, 255, 0.72) !important;
+  border-color: rgba(1, 139, 141, 0.32) !important;
+  box-shadow: 0 10px 24px rgba(1, 139, 141, 0.14);
 }
 
 .dark .VPFeature:hover {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.3);
+  background:
+    linear-gradient(135deg, rgba(1, 139, 141, 0.22), rgba(0, 47, 167, 0.16)),
+    rgba(11, 12, 21, 0.74) !important;
+  border-color: rgba(113, 226, 209, 0.34) !important;
+  box-shadow: 0 12px 28px rgba(13, 58, 105, 0.24);
 }
 
 .VPFeature::before {
@@ -175,7 +204,7 @@ body {
   inset: 0;
   border-radius: 12px; 
   padding: 1.5px;
-  background: linear-gradient(135deg, rgba(0,0,0,0.1), rgba(0,0,0,0.02)); 
+  background: linear-gradient(135deg, rgba(1, 139, 141, 0.22), rgba(113, 226, 209, 0.18), rgba(249, 212, 108, 0.14));
   -webkit-mask: 
      linear-gradient(#fff 0 0) content-box, 
      linear-gradient(#fff 0 0);
@@ -186,13 +215,13 @@ body {
 }
 
 .dark .VPFeature::before {
-  background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.05)); 
+  background: linear-gradient(135deg, rgba(113, 226, 209, 0.28), rgba(0, 47, 167, 0.22));
 }
 
 .VPFeature:hover::before {
   background: linear-gradient(
     90deg, 
-    #7928ca, #ff0080, #00c6ff, #ffd700, #7928ca
+    var(--ssmt-klein), var(--ssmt-mars), var(--ssmt-tiffany), var(--ssmt-schonbrunn), var(--ssmt-klein)
   );
   background-size: 200% 100%;
   animation: borderRotate 2s linear infinite;
@@ -212,7 +241,7 @@ body {
   background: linear-gradient(
     to right,
     transparent,
-    rgba(255, 255, 255, 0.4),
+    rgba(113, 226, 209, 0.26),
     transparent
   );
   transform: skewX(-25deg);
@@ -223,7 +252,7 @@ body {
   background: linear-gradient(
     to right,
     transparent,
-    rgba(255, 255, 255, 0.15),
+    rgba(113, 226, 209, 0.2),
     transparent
   );
 }
@@ -243,17 +272,86 @@ body {
 
 .VPFeature:hover .title {
   transform: translateX(4px);
-  background: linear-gradient(to right, #0072ff, #00c6ff);
+  background: linear-gradient(to right, var(--ssmt-klein), var(--ssmt-mars));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .dark .VPFeature:hover .title {
-  background: linear-gradient(to right, #00c6ff, #0072ff);
+  background: linear-gradient(to right, var(--ssmt-tiffany), var(--ssmt-schonbrunn));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.VPFeatures .VPFeature:nth-child(1) {
+  background:
+    linear-gradient(135deg, rgba(113, 226, 209, 0.16), rgba(0, 47, 167, 0.06)),
+    rgba(255, 255, 255, 0.72) !important;
+  border-color: rgba(1, 139, 141, 0.18) !important;
+}
+
+.VPFeatures .VPFeature:nth-child(1)::before {
+  background: linear-gradient(135deg, rgba(113, 226, 209, 0.28), rgba(1, 139, 141, 0.22));
+}
+
+.VPFeatures .VPFeature:nth-child(1):hover .title {
+  background: linear-gradient(to right, var(--ssmt-mars), var(--ssmt-klein));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.VPFeatures .VPFeature:nth-child(2) {
+  background:
+    linear-gradient(135deg, rgba(249, 212, 108, 0.16), rgba(235, 92, 32, 0.08)),
+    rgba(255, 255, 255, 0.72) !important;
+  border-color: rgba(235, 92, 32, 0.18) !important;
+}
+
+.VPFeatures .VPFeature:nth-child(2)::before {
+  background: linear-gradient(135deg, rgba(235, 92, 32, 0.24), rgba(249, 212, 108, 0.2), rgba(211, 73, 71, 0.16));
+}
+
+.VPFeatures .VPFeature:nth-child(2):hover .title {
+  background: linear-gradient(to right, var(--ssmt-hermes), var(--ssmt-titian), var(--ssmt-schonbrunn));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.VPFeatures .VPFeature:nth-child(3) {
+  background:
+    linear-gradient(135deg, rgba(110, 204, 84, 0.14), rgba(13, 58, 105, 0.08)),
+    rgba(255, 255, 255, 0.72) !important;
+  border-color: rgba(110, 204, 84, 0.2) !important;
+}
+
+.VPFeatures .VPFeature:nth-child(3)::before {
+  background: linear-gradient(135deg, rgba(110, 204, 84, 0.24), rgba(13, 58, 105, 0.2), rgba(73, 45, 34, 0.14));
+}
+
+.VPFeatures .VPFeature:nth-child(3):hover .title {
+  background: linear-gradient(to right, var(--ssmt-success), var(--ssmt-prussian), var(--ssmt-van-dyke));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.dark .VPFeatures .VPFeature:nth-child(1) {
+  background:
+    linear-gradient(135deg, rgba(13, 58, 105, 0.3), rgba(113, 226, 209, 0.12)),
+    rgba(11, 12, 21, 0.72) !important;
+}
+
+.dark .VPFeatures .VPFeature:nth-child(2) {
+  background:
+    linear-gradient(135deg, rgba(71, 1, 37, 0.28), rgba(211, 73, 71, 0.12), rgba(249, 212, 108, 0.08)),
+    rgba(11, 12, 21, 0.72) !important;
+}
+
+.dark .VPFeatures .VPFeature:nth-child(3) {
+  background:
+    linear-gradient(135deg, rgba(13, 58, 105, 0.28), rgba(110, 204, 84, 0.1), rgba(73, 45, 34, 0.16)),
+    rgba(11, 12, 21, 0.72) !important;
 }
 
 :root {
@@ -266,10 +364,12 @@ body {
 .vp-doc h1 { 
   background-image: linear-gradient(
     to right,
-    #7928ca,
-    #ff0080,
-    #00c6ff,
-    #7928ca
+    var(--ssmt-klein),
+    var(--ssmt-mars),
+    var(--ssmt-tiffany),
+    var(--ssmt-schonbrunn),
+    var(--ssmt-burgundy),
+    var(--ssmt-klein)
   );
   background-size: 200% auto;
   -webkit-background-clip: text !important;
@@ -284,10 +384,12 @@ body {
 .dark .vp-doc h1 {
   background-image: linear-gradient(
     to right,
-    #d53369,
-    #daae51,
-    #a755f7,
-    #d53369
+    var(--ssmt-tiffany),
+    var(--ssmt-klein),
+    var(--ssmt-mars),
+    var(--ssmt-schonbrunn),
+    var(--ssmt-titian),
+    var(--ssmt-tiffany)
   );
 }
 
@@ -298,11 +400,12 @@ body {
 .VPHero .text {
   background: linear-gradient(
     120deg,
-    #333333 0%,
-    #4a90e2 25%,
-    #9013fe 50%,
-    #333333 75%,
-    #4a90e2 100%
+    var(--ssmt-prussian) 0%,
+    var(--ssmt-klein) 18%,
+    var(--ssmt-mars) 36%,
+    var(--ssmt-van-dyke) 54%,
+    var(--ssmt-hermes) 72%,
+    var(--ssmt-prussian) 100%
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
@@ -317,27 +420,29 @@ body {
 .dark .VPHero .text {
   background: linear-gradient(
     120deg,
-    #ffffff 0%,
-    #8ec5fc 25%,
-    #e0c3fc 50%,
-    #ffffff 75%,
-    #8ec5fc 100%
+    var(--ssmt-tiffany) 0%,
+    var(--ssmt-schonbrunn) 24%,
+    var(--ssmt-lime) 46%,
+    var(--ssmt-hermes) 68%,
+    var(--ssmt-tiffany) 100%
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   opacity: 0.9;
-  text-shadow: 0 0 10px rgba(142, 197, 252, 0.3);
+  text-shadow: 0 0 10px rgba(113, 226, 209, 0.32);
 }
 
 .VPHero .tagline {
   background: linear-gradient(
-    90deg, 
-    #d35400, 
-    #c0392b, 
-    #f39c12,
-    #d35400
+    90deg,
+    var(--ssmt-lime),
+    var(--ssmt-mars),
+    var(--ssmt-klein),
+    var(--ssmt-hermes),
+    var(--ssmt-titian),
+    var(--ssmt-schonbrunn)
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
@@ -350,11 +455,13 @@ body {
 
 .dark .VPHero .tagline {
   background: linear-gradient(
-    90deg, 
-    #ffd700, 
-    #ff0080, 
-    #7928ca,
-    #ffd700
+    90deg,
+    var(--ssmt-tiffany),
+    var(--ssmt-lime),
+    var(--ssmt-schonbrunn),
+    var(--ssmt-accent),
+    var(--ssmt-titian),
+    var(--ssmt-tiffany)
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
@@ -420,22 +527,10 @@ body {
   transition: filter 0.3s ease;
 }
 
-.VPSocialLink[href*="github"]:hover {
-  color: #00c6ff !important;
-  filter: drop-shadow(0 0 8px rgba(0, 198, 255, 0.6))
-          drop-shadow(0 0 15px rgba(0, 198, 255, 0.3));
-}
-
-:not(.dark) .VPSocialLink[href*="github"]:hover {
-  color: #0072ff !important;
-  filter: drop-shadow(0 0 8px rgba(0, 114, 255, 0.4))
-          drop-shadow(0 0 15px rgba(0, 114, 255, 0.2));
-}
-
 .VPSocialLink[href*="discord"]:hover {
-  color: #5865F2 !important;
-  filter: drop-shadow(0 0 8px rgba(88, 101, 242, 0.8))
-          drop-shadow(0 0 15px rgba(88, 101, 242, 0.4));
+  color: var(--ssmt-burgundy) !important;
+  filter: drop-shadow(0 0 8px rgba(211, 73, 71, 0.8))
+          drop-shadow(0 0 15px rgba(211, 73, 71, 0.4));
   animation: discordShake 0.5s ease-in-out infinite alternate;
 }
 
@@ -476,7 +571,7 @@ body {
 }
 
 .VPFooter .copyright a:hover {
-  background: linear-gradient(90deg, #00f260, #0575e6, #b20a2c, #fffb00);
+  background: linear-gradient(90deg, var(--ssmt-schonbrunn), var(--ssmt-burgundy), var(--ssmt-burgundy), var(--ssmt-schonbrunn));
   background-size: 300% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -516,18 +611,18 @@ body {
 @keyframes fireworkSmall {
   0% {
     opacity: 1;
-    text-shadow: 
-      0 0 0 #00ffcc, 
-      0 0 0 #ff00ff, 
-      0 0 0 #ffff00;
+    text-shadow:
+      0 0 0 var(--ssmt-schonbrunn),
+      0 0 0 var(--ssmt-titian),
+      0 0 0 var(--ssmt-schonbrunn);
     transform: translate(-50%, -50%) scale(0.5);
   }
   100% {
     opacity: 0;
-    text-shadow: 
-      -20px -25px 0 #00ffcc, 
-      20px -20px 0 #ff00ff, 
-      0px -35px 0 #ffff00;
+    text-shadow:
+      -20px -25px 0 var(--ssmt-schonbrunn),
+      20px -20px 0 var(--ssmt-titian),
+      0px -35px 0 var(--ssmt-schonbrunn);
     transform: translate(-50%, -50%) scale(1.5);
   }
 }
@@ -535,18 +630,18 @@ body {
 @keyframes fireworkBig {
   0% {
     opacity: 1;
-    text-shadow: 
-      0 0 0 #ff3366, 
-      0 0 0 #3366ff, 
-      0 0 0 #00ff00;
+    text-shadow:
+      0 0 0 var(--ssmt-titian),
+      0 0 0 var(--ssmt-burgundy),
+      0 0 0 var(--ssmt-schonbrunn);
     transform: translate(-50%, -50%) scale(0.5) rotate(0deg);
   }
   100% {
     opacity: 0;
-    text-shadow: 
-      -30px 10px 0 #ff3366, 
-      30px 10px 0 #3366ff, 
-      0px 30px 0 #00ff00;
+    text-shadow:
+      -30px 10px 0 var(--ssmt-titian),
+      30px 10px 0 var(--ssmt-burgundy),
+      0px 30px 0 var(--ssmt-schonbrunn);
     transform: translate(-50%, -50%) scale(2) rotate(45deg);
   }
 }
@@ -569,7 +664,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 198, 255, 0.3);
+  background: rgba(249, 212, 108, 0.3);
   border-radius: 4px;
   border: 2px solid transparent;
   background-clip: content-box;
@@ -577,20 +672,20 @@ html {
 }
 
 .dark ::-webkit-scrollbar-thumb {
-  background: rgba(0, 198, 255, 0.4);
+  background: rgba(249, 212, 108, 0.4);
   box-shadow: none;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #ff0080 !important;
+  background-color: var(--ssmt-accent) !important;
   box-shadow: none;
 }
 
 
 ::selection {
-  background: rgba(0, 198, 255, 0.3);
+  background: rgba(249, 212, 108, 0.3);
   color: inherit;
-  text-shadow: 0 0 5px rgba(0, 198, 255, 0.5);
+  text-shadow: 0 0 5px rgba(249, 212, 108, 0.5);
 }
 
 
@@ -634,7 +729,7 @@ html {
   font-weight: 700 !important;
   font-size: 15px !important;
   letter-spacing: 0.5px;
-  background: linear-gradient(135deg, var(--vp-c-text-1), #a755f7);
+  background: linear-gradient(135deg, var(--vp-c-text-1), var(--ssmt-van-dyke), var(--ssmt-accent-2));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent !important;
@@ -642,7 +737,7 @@ html {
 }
 
 .VPNavBar .title:hover {
-  background: linear-gradient(135deg, #ff0080, #a755f7, #00c6ff);
+  background: linear-gradient(135deg, var(--ssmt-hermes), var(--ssmt-china-red), var(--ssmt-burgundy));
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -654,13 +749,13 @@ html {
 }
 
 .dark .VPNavBar .title {
-  background: linear-gradient(135deg, #e0e0e0, #a755f7);
+  background: linear-gradient(135deg, #e0e0e0, var(--ssmt-schonbrunn), var(--ssmt-accent-2));
   -webkit-background-clip: text;
   background-clip: text;
 }
 
 .dark .VPNavBar .title:hover {
-  background: linear-gradient(135deg, #ff0080, #daae51, #00c6ff);
+  background: linear-gradient(135deg, var(--ssmt-hermes), var(--ssmt-schonbrunn), var(--ssmt-schonbrunn));
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -679,7 +774,7 @@ html {
   left: 50%;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #ff0080, #a755f7);
+  background: linear-gradient(90deg, var(--ssmt-hermes), var(--ssmt-china-red));
   border-radius: 2px;
   transition: all 0.3s ease;
   transform: translateX(-50%);
@@ -692,13 +787,13 @@ html {
 
 .VPNavBarMenuLink:hover,
 .VPNavBarMenuLink.active {
-  color: #ff0080 !important;
-  text-shadow: 0 0 8px rgba(255, 0, 128, 0.4);
+  color: var(--ssmt-hermes) !important;
+  text-shadow: 0 0 8px rgba(235, 92, 32, 0.35);
 }
 
 .dark .VPNavBarMenuLink:hover,
 .dark .VPNavBarMenuLink.active {
-  text-shadow: 0 0 12px rgba(255, 0, 128, 0.6);
+  text-shadow: 0 0 12px rgba(249, 212, 108, 0.55);
 }
 
 /* --- 下拉菜单触发按钮 (新手教程/游戏配置/开发者文档) --- */
@@ -708,12 +803,12 @@ html {
 }
 
 .VPFlyout .button:hover .text {
-  color: #ff0080 !important;
-  text-shadow: 0 0 8px rgba(255, 0, 128, 0.4);
+  color: var(--ssmt-hermes) !important;
+  text-shadow: 0 0 8px rgba(235, 92, 32, 0.35);
 }
 
 .dark .VPFlyout .button:hover .text {
-  text-shadow: 0 0 12px rgba(255, 0, 128, 0.6);
+  text-shadow: 0 0 12px rgba(249, 212, 108, 0.55);
 }
 
 /* 下拉箭头 */
@@ -722,7 +817,7 @@ html {
 }
 
 .VPFlyout .button:hover .text-icon {
-  color: #ff0080 !important;
+  color: var(--ssmt-china-red) !important;
   transform: translateY(1px);
 }
 
@@ -734,7 +829,7 @@ html {
 }
 
 .VPFlyout .button:hover .vpi-chevron-down {
-  color: #ff0080 !important;
+  color: var(--ssmt-accent) !important;
   transform: translateY(1px);
 }
 
@@ -750,11 +845,11 @@ html {
 }
 
 .VPNavBarMenuGroup .button:hover {
-  background-color: rgba(255, 0, 128, 0.06);
+  background-color: rgba(235, 92, 32, 0.08);
 }
 
 .dark .VPNavBarMenuGroup .button:hover {
-  background-color: rgba(255, 0, 128, 0.1);
+  background-color: rgba(249, 212, 108, 0.12);
 }
 
 /* 下拉菜单整个 menu 区域 (弹出面板包裹) */
@@ -770,25 +865,25 @@ html {
 }
 
 .VPNavBar .content button:not(.VPNavBarSearchButton):not(.translate-btn):not(.music-toggle):not(.VPMenu *):hover {
-  background-color: rgba(255, 0, 128, 0.08);
-  color: #ff0080 !important;
-  text-shadow: 0 0 6px rgba(255, 0, 128, 0.3);
+  background-color: rgba(235, 92, 32, 0.1);
+  color: var(--ssmt-hermes) !important;
+  text-shadow: 0 0 6px rgba(235, 92, 32, 0.3);
   transform: scale(1.1);
 }
 
 .dark .VPNavBar .content button:not(.VPNavBarSearchButton):not(.translate-btn):not(.music-toggle):not(.VPMenu *):hover {
-  background-color: rgba(255, 0, 128, 0.12);
+  background-color: rgba(249, 212, 108, 0.14);
 }
 
 /* --- 导航栏分割线 --- */
 .VPNavBar .divider {
-  background: linear-gradient(90deg, transparent, rgba(255, 0, 128, 0.2), rgba(167, 85, 247, 0.2), transparent) !important;
+  background: linear-gradient(90deg, transparent, rgba(235, 92, 32, 0.22), rgba(73, 45, 34, 0.16), transparent) !important;
   height: 1px !important;
   opacity: 0.6;
 }
 
 .dark .VPNavBar .divider {
-  background: linear-gradient(90deg, transparent, rgba(255, 0, 128, 0.25), rgba(167, 85, 247, 0.25), transparent) !important;
+  background: linear-gradient(90deg, transparent, rgba(249, 212, 108, 0.25), rgba(235, 92, 32, 0.22), transparent) !important;
 }
 
 
@@ -814,7 +909,7 @@ html {
   right: 0;
   width: 1px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #00c6ff, #ff0080, transparent);
+  background: linear-gradient(180deg, transparent, var(--ssmt-schonbrunn), var(--ssmt-hermes), var(--ssmt-van-dyke), transparent);
   opacity: 0.3;
 }
 
@@ -836,12 +931,12 @@ html {
   left: 0;
   width: 100%;
   height: 2.5px;
-  background: linear-gradient(90deg, #ff0080, #a755f7, transparent);
+  background: linear-gradient(90deg, var(--ssmt-hermes), var(--ssmt-hermes), transparent);
   border-radius: 3px;
 }
 
 .dark .vp-doc h2::after {
-  background: linear-gradient(90deg, #ff0080, #a755f7, transparent);
+  background: linear-gradient(90deg, var(--ssmt-schonbrunn), var(--ssmt-schonbrunn), transparent);
 }
 
 .vp-doc h3 {
@@ -860,7 +955,7 @@ html {
   top: 0.25em;
   width: 4px;
   height: 0.85em;
-  background: linear-gradient(180deg, #ff0080, #a755f7);
+  background: linear-gradient(180deg, var(--ssmt-china-red), var(--ssmt-hermes));
   border-radius: 2px;
 }
 
@@ -870,25 +965,25 @@ html {
 }
 
 .vp-doc a:hover {
-  color: #0072ff !important;
+  color: var(--ssmt-burgundy) !important;
   text-shadow: none;
 }
 
 .dark .vp-doc a:hover {
-  color: #00c6ff !important;
-  text-shadow: 0 0 8px rgba(0, 198, 255, 0.4);
+  color: var(--ssmt-schonbrunn) !important;
+  text-shadow: 0 0 8px rgba(249, 212, 108, 0.4);
 }
 
 .vp-doc hr {
   border: none;
   height: 1.5px;
-  background: linear-gradient(90deg, transparent, rgba(255, 0, 128, 0.2), rgba(167, 85, 247, 0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(235, 92, 32, 0.18), rgba(73, 45, 34, 0.16), transparent);
   margin: 2.5em 0;
   border-radius: 2px;
 }
 
 .dark .vp-doc hr {
-  background: linear-gradient(90deg, transparent, rgba(255, 0, 128, 0.25), rgba(167, 85, 247, 0.25), transparent);
+  background: linear-gradient(90deg, transparent, rgba(249, 212, 108, 0.22), rgba(211, 73, 71, 0.2), transparent);
 }
 
 .vp-doc img {
@@ -899,7 +994,7 @@ html {
 
 .vp-doc img:hover {
   transform: scale(1.01);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(235, 92, 32, 0.14);
 }
 
 .vp-doc img {
@@ -909,7 +1004,7 @@ html {
 
 .vp-doc img:hover {
   transform: scale(1.01);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(235, 92, 32, 0.18);
 }
 
 
@@ -917,8 +1012,9 @@ html {
 .dark body {
   background-color: #0b0c15;
   background-image: 
-    radial-gradient(circle at 15% 50%, rgba(76, 29, 149, 0.15), transparent 40%),
-    radial-gradient(circle at 85% 30%, rgba(56, 189, 248, 0.15), transparent 40%);
+    radial-gradient(circle at 15% 50%, rgba(13, 58, 105, 0.24), transparent 40%),
+    radial-gradient(circle at 85% 30%, rgba(113, 226, 209, 0.14), transparent 40%),
+    radial-gradient(circle at 55% 72%, rgba(249, 212, 108, 0.08), transparent 36%);
   background-attachment: fixed;
 }
 
@@ -937,9 +1033,11 @@ html {
   height: 100%;
   z-index: -1;
   background-image: 
-    radial-gradient(circle at 20% 30%, rgba(255, 105, 180, 0.15) 0%, transparent 20%),
-    radial-gradient(circle at 80% 70%, rgba(255, 215, 0, 0.1) 0%, transparent 20%),
-    radial-gradient(circle at 50% 50%, rgba(148, 0, 211, 0.1) 0%, transparent 30%);
+    radial-gradient(circle at 18% 28%, rgba(0, 47, 167, 0.14) 0%, transparent 22%),
+    radial-gradient(circle at 78% 68%, rgba(113, 226, 209, 0.16) 0%, transparent 22%),
+    radial-gradient(circle at 52% 52%, rgba(1, 139, 141, 0.1) 0%, transparent 30%),
+    radial-gradient(circle at 64% 24%, rgba(249, 212, 108, 0.08) 0%, transparent 18%),
+    radial-gradient(circle at 34% 76%, rgba(211, 73, 71, 0.08) 0%, transparent 18%);
   filter: blur(30px);
   animation: nebulaPulse 8s ease-in-out infinite alternate;
   pointer-events: none;
@@ -1019,7 +1117,7 @@ html {
   height: 100%;
   background: radial-gradient(
     ellipse at top,
-    rgba(121, 40, 202, 0.15),
+    rgba(13, 58, 105, 0.22),
     transparent 70%
   );
   z-index: -2;
@@ -1042,7 +1140,7 @@ html {
   height: 100%;
   background-image: 
     linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%),
-    linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 215, 0, 0.6) 50%, rgba(255, 255, 255, 0) 100%);
+    linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(113, 226, 209, 0.58) 50%, rgba(255, 255, 255, 0) 100%);
   background-size: 150px 2px, 100px 2px;
   background-repeat: no-repeat;
   background-position: -200px 20%, -200px 60%;
@@ -1093,7 +1191,7 @@ html {
 .dark .vp-doc h1, 
 .dark .vp-doc h2, 
 .dark .vp-doc h3 {
-  text-shadow: 0 0 15px rgba(167, 85, 247, 0.4);
+  text-shadow: 0 0 15px rgba(73, 45, 34, 0.4);
 }
 
 .vp-doc {
@@ -1103,9 +1201,9 @@ html {
 }
 
 .dark .vp-doc strong {
-  color: #ffd700;
+  color: var(--ssmt-schonbrunn);
   font-weight: 700;
-  text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+  text-shadow: 0 0 10px rgba(249, 212, 108, 0.6);
   padding: 0 2px;
 }
 
@@ -1119,11 +1217,11 @@ html {
 }
 
 .vp-doc blockquote {
-  border-left: 4px solid #a755f7;
-  background: linear-gradient(90deg, rgba(167, 85, 247, 0.1), transparent);
+  border-left: 4px solid var(--ssmt-accent-2);
+  background: linear-gradient(90deg, rgba(73, 45, 34, 0.1), transparent);
   border-radius: 0 8px 8px 0;
   padding: 16px 24px;
-  color: #581c87;
+  color: #470125;
   font-style: italic;
   position: relative;
   overflow: hidden;
@@ -1131,18 +1229,18 @@ html {
 }
 
 .dark .vp-doc blockquote {
-  color: #d8b4fe;
+  color: #F9D46C;
 }
 
 .vp-doc blockquote:hover {
-  border-left-color: #00c6ff;
-  background: linear-gradient(90deg, rgba(0, 198, 255, 0.1), transparent);
-  color: #0369a1;
+  border-left-color: var(--ssmt-schonbrunn);
+  background: linear-gradient(90deg, rgba(249, 212, 108, 0.1), transparent);
+  color: #EB5C20;
   transform: translateX(5px);
 }
 
 .dark .vp-doc blockquote:hover {
-  color: #bae6fd;
+  color: #F9D46C;
 }
 
 .vp-doc blockquote::before {
@@ -1160,9 +1258,9 @@ html {
 }
 
 ::selection {
-  background: rgba(255, 0, 128, 0.3);
+  background: rgba(235, 92, 32, 0.3);
   color: #fff;
-  text-shadow: 0 0 8px #ff0080;
+  text-shadow: 0 0 8px var(--ssmt-accent);
 }
 
 .vp-doc div[class*='language-'] {
@@ -1185,13 +1283,13 @@ html {
 }
 
 .vp-doc div[class*='language-']:hover {
-  border-color: rgba(255, 0, 128, 0.2);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), 0 12px 32px rgba(255, 0, 128, 0.06);
+  border-color: rgba(235, 92, 32, 0.2);
+  box-shadow: 0 2px 8px rgba(249, 212, 108, 0.08), 0 12px 32px rgba(235, 92, 32, 0.1);
 }
 
 .dark .vp-doc div[class*='language-']:hover {
-  border-color: rgba(255, 0, 128, 0.25);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 12px 32px rgba(255, 0, 128, 0.1);
+  border-color: rgba(235, 92, 32, 0.25);
+  box-shadow: 0 2px 8px rgba(249, 212, 108, 0.08), 0 12px 32px rgba(235, 92, 32, 0.14);
 }
 
 /* 代码块顶部彩色标签条 */
@@ -1202,7 +1300,7 @@ html {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #ff0080, #a755f7, #00c6ff);
+  background: linear-gradient(90deg, var(--ssmt-accent), var(--ssmt-accent-2), var(--ssmt-schonbrunn));
   opacity: 0.6;
   z-index: 2;
 }
@@ -1253,8 +1351,8 @@ html {
 
 .vp-doc div[class*='language-'] .copy:hover {
   opacity: 1;
-  background-color: rgba(255, 0, 128, 0.1);
-  color: #ff0080;
+  background-color: rgba(235, 92, 32, 0.1);
+  color: var(--ssmt-accent);
   transform: scale(1.1);
 }
 
@@ -1288,8 +1386,8 @@ html {
 }
 
 .dark .VPSidebarItem.is-active .text {
-  text-shadow: 0 0 10px rgba(0, 198, 255, 0.6);
-  color: #00c6ff !important;
+  text-shadow: 0 0 10px rgba(249, 212, 108, 0.6);
+  color: var(--ssmt-schonbrunn) !important;
 }
 
 .dark .VPSidebarItem .text:hover {
@@ -1307,8 +1405,8 @@ html {
 
 .vp-doc details[open] {
   background: rgba(0, 0, 0, 0.4);
-  border-color: rgba(0, 198, 255, 0.3);
-  box-shadow: 0 0 15px rgba(0, 198, 255, 0.1);
+  border-color: rgba(249, 212, 108, 0.3);
+  box-shadow: 0 0 15px rgba(249, 212, 108, 0.1);
 }
 
 .vp-doc summary {
@@ -1331,49 +1429,49 @@ html {
   left: 0;
   top: 2px;
   font-size: 0.8em;
-  color: #00c6ff;
+  color: var(--ssmt-schonbrunn);
   transition: transform 0.3s ease;
 }
 
 .vp-doc details[open] summary::before {
   transform: rotate(90deg);
-  color: #ff0080;
+  color: var(--ssmt-accent);
 }
 
 .vp-doc summary:hover {
-  color: #00c6ff;
-  text-shadow: 0 0 8px rgba(0, 198, 255, 0.6);
+  color: var(--ssmt-schonbrunn);
+  text-shadow: 0 0 8px rgba(249, 212, 108, 0.6);
 }
 
 .vp-doc :not(pre) > code {
   font-family: 'Fira Code', 'JetBrains Mono', monospace;
   font-size: 0.85em;
   font-weight: 500;
-  color: #c026d3 !important;
-  background-color: rgba(192, 38, 211, 0.08) !important;
+  color: var(--ssmt-burgundy) !important;
+  background-color: rgba(73, 45, 34, 0.08) !important;
   padding: 3px 8px;
   border-radius: 5px;
-  border: 1px solid rgba(192, 38, 211, 0.12);
+  border: 1px solid rgba(73, 45, 34, 0.12);
   box-shadow: none;
   transition: all 0.25s ease;
 }
 
 .dark .vp-doc :not(pre) > code {
-  color: #e879f9 !important;
-  background-color: rgba(232, 121, 249, 0.1) !important;
-  border: 1px solid rgba(232, 121, 249, 0.15);
+  color: var(--ssmt-schonbrunn) !important;
+  background-color: rgba(249, 212, 108, 0.1) !important;
+  border: 1px solid rgba(249, 212, 108, 0.15);
 }
 
 .vp-doc :not(pre) > code:hover {
-  background-color: rgba(192, 38, 211, 0.15) !important;
-  border-color: #c026d3;
-  box-shadow: 0 0 8px rgba(192, 38, 211, 0.15);
+  background-color: rgba(73, 45, 34, 0.15) !important;
+  border-color: var(--ssmt-burgundy);
+  box-shadow: 0 0 8px rgba(73, 45, 34, 0.15);
 }
 
 .dark .vp-doc :not(pre) > code:hover {
-  background-color: rgba(232, 121, 249, 0.18) !important;
-  box-shadow: 0 0 10px rgba(232, 121, 249, 0.2);
-  border-color: #e879f9;
+  background-color: rgba(249, 212, 108, 0.18) !important;
+  box-shadow: 0 0 10px rgba(249, 212, 108, 0.2);
+  border-color: var(--ssmt-schonbrunn);
 }
 
 .vp-doc table {
@@ -1393,18 +1491,18 @@ html {
 }
 
 .vp-doc table th {
-  background: linear-gradient(135deg, rgba(255,0,128,0.06), rgba(167,85,247,0.06));
+  background: linear-gradient(135deg, rgba(235, 92, 32, 0.06), rgba(249, 212, 108, 0.08));
   font-weight: 600;
   font-size: 0.9em;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   padding: 12px 16px !important;
-  border-bottom: 2px solid rgba(255,0,128,0.15);
+  border-bottom: 2px solid rgba(235, 92, 32, 0.18);
 }
 
 .dark .vp-doc table th {
-  background: linear-gradient(135deg, rgba(255,0,128,0.1), rgba(167,85,247,0.1));
-  border-bottom: 2px solid rgba(255,0,128,0.2);
+  background: linear-gradient(135deg, rgba(249, 212, 108, 0.1), rgba(235, 92, 32, 0.12));
+  border-bottom: 2px solid rgba(249, 212, 108, 0.24);
 }
 
 .vp-doc table td {
@@ -1421,11 +1519,11 @@ html {
 }
 
 .vp-doc table tr:hover td {
-  background: rgba(255,0,128,0.02);
+  background: rgba(235, 92, 32, 0.03);
 }
 
 .dark .vp-doc table tr:hover td {
-  background: rgba(255,0,128,0.04);
+  background: rgba(249, 212, 108, 0.05);
 }
 
 .vp-doc p {
@@ -1445,7 +1543,7 @@ html {
 
 .vp-doc a {
   text-decoration: none;
-  background: linear-gradient(to right, #00c6ff, #ff0080);
+  background: linear-gradient(to right, var(--ssmt-hermes), var(--ssmt-schonbrunn), var(--ssmt-schonbrunn));
   background-size: 0% 2px;
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -1458,8 +1556,8 @@ html {
 }
 
 .dark .VPSidebarItem.is-active .text {
-  text-shadow: 0 0 10px rgba(0, 198, 255, 0.6);
-  color: #00c6ff !important;
+  text-shadow: 0 0 10px rgba(249, 212, 108, 0.6);
+  color: var(--ssmt-schonbrunn) !important;
 }
 
 .dark .VPSidebarItem.text:hover {
@@ -1472,7 +1570,7 @@ html {
 }
 
 .dark .vp-doc img:hover {
-  filter: drop-shadow(0 0 8px rgba(0, 198, 255, 0.4));
+  filter: drop-shadow(0 0 8px rgba(249, 212, 108, 0.4));
 }
 
 .dark .VPNavBarMenuLink {
@@ -1481,7 +1579,7 @@ html {
 
 .dark .VPNavBarMenuLink:hover,
 .dark .VPNavBarMenuLink.active {
-  text-shadow: 0 0 8px rgba(255, 0, 128, 0.5);
+  text-shadow: 0 0 8px rgba(235, 92, 32, 0.5);
 }
 
 
@@ -1498,75 +1596,75 @@ html {
 }
 
 .vp-doc .custom-block.info {
-  background-color: rgba(0, 114, 255, 0.05);
-  border-color: rgba(0, 114, 255, 0.2);
-  box-shadow: 0 4px 12px rgba(0, 114, 255, 0.05);
+  background-color: rgba(73, 45, 34, 0.05);
+  border-color: rgba(73, 45, 34, 0.22);
+  box-shadow: 0 4px 12px rgba(73, 45, 34, 0.05);
 }
 .dark .vp-doc .custom-block.info {
-  background-color: rgba(0, 198, 255, 0.05);
-  border-color: rgba(0, 198, 255, 0.3);
-  box-shadow: inset 0 0 20px rgba(0, 198, 255, 0.05);
+  background-color: rgba(249, 212, 108, 0.05);
+  border-color: rgba(249, 212, 108, 0.3);
+  box-shadow: inset 0 0 20px rgba(249, 212, 108, 0.05);
 }
 .vp-doc .custom-block.info .custom-block-title {
-  color: #0072ff;
+  color: var(--ssmt-van-dyke);
 }
 .dark .vp-doc .custom-block.info .custom-block-title {
-  color: #00c6ff;
-  text-shadow: 0 0 5px rgba(0, 198, 255, 0.4);
+  color: var(--ssmt-schonbrunn);
+  text-shadow: 0 0 5px rgba(249, 212, 108, 0.4);
 }
 
 .vp-doc .custom-block.tip {
-  background-color: rgba(0, 180, 90, 0.05);
-  border-color: rgba(0, 180, 90, 0.2);
-  box-shadow: 0 4px 12px rgba(0, 180, 90, 0.05);
+  background-color: rgba(249, 212, 108, 0.05);
+  border-color: rgba(249, 212, 108, 0.22);
+  box-shadow: 0 4px 12px rgba(249, 212, 108, 0.05);
 }
 .dark .vp-doc .custom-block.tip {
-  background-color: rgba(0, 255, 128, 0.05);
-  border-color: rgba(0, 255, 128, 0.3);
-  box-shadow: inset 0 0 20px rgba(0, 255, 128, 0.05);
+  background-color: rgba(249, 212, 108, 0.05);
+  border-color: rgba(249, 212, 108, 0.3);
+  box-shadow: inset 0 0 20px rgba(249, 212, 108, 0.05);
 }
 .vp-doc .custom-block.tip .custom-block-title {
-  color: #00b45a;
+  color: var(--ssmt-schonbrunn);
 }
 .dark .vp-doc .custom-block.tip .custom-block-title {
-  color: #00ff80;
-  text-shadow: 0 0 5px rgba(0, 255, 128, 0.4);
+  color: var(--ssmt-schonbrunn);
+  text-shadow: 0 0 5px rgba(249, 212, 108, 0.4);
 }
 
 .vp-doc .custom-block.warning {
-  background-color: rgba(255, 165, 0, 0.05);
-  border-color: rgba(255, 165, 0, 0.2);
-  box-shadow: 0 4px 12px rgba(255, 165, 0, 0.05);
+  background-color: rgba(235, 92, 32, 0.06);
+  border-color: rgba(235, 92, 32, 0.24);
+  box-shadow: 0 4px 12px rgba(73, 45, 34, 0.06);
 }
 .dark .vp-doc .custom-block.warning {
-  background-color: rgba(255, 215, 0, 0.05);
-  border-color: rgba(255, 215, 0, 0.3);
-  box-shadow: inset 0 0 20px rgba(255, 215, 0, 0.05);
+  background-color: rgba(249, 212, 108, 0.05);
+  border-color: rgba(249, 212, 108, 0.3);
+  box-shadow: inset 0 0 20px rgba(249, 212, 108, 0.05);
 }
 .vp-doc .custom-block.warning .custom-block-title {
-  color: #d35400;
+  color: var(--ssmt-hermes);
 }
 .dark .vp-doc .custom-block.warning .custom-block-title {
-  color: #ffd700;
-  text-shadow: 0 0 5px rgba(255, 215, 0, 0.4);
+  color: var(--ssmt-schonbrunn);
+  text-shadow: 0 0 5px rgba(249, 212, 108, 0.4);
 }
 
 .vp-doc .custom-block.danger {
-  background-color: rgba(220, 20, 60, 0.05);
-  border-color: rgba(220, 20, 60, 0.2);
-  box-shadow: 0 4px 12px rgba(220, 20, 60, 0.05);
+  background-color: rgba(200, 22, 29, 0.05);
+  border-color: rgba(200, 22, 29, 0.22);
+  box-shadow: 0 4px 12px rgba(73, 45, 34, 0.06);
 }
 .dark .vp-doc .custom-block.danger {
-  background-color: rgba(255, 0, 85, 0.05);
-  border-color: rgba(255, 0, 85, 0.3);
-  box-shadow: inset 0 0 20px rgba(255, 0, 85, 0.05);
+  background-color: rgba(211, 73, 71, 0.05);
+  border-color: rgba(211, 73, 71, 0.3);
+  box-shadow: inset 0 0 20px rgba(211, 73, 71, 0.05);
 }
 .vp-doc .custom-block.danger .custom-block-title {
-  color: #dc143c;
+  color: var(--ssmt-china-red);
 }
 .dark .vp-doc .custom-block.danger .custom-block-title {
-  color: #ff0055;
-  text-shadow: 0 0 5px rgba(255, 0, 85, 0.4);
+  color: var(--ssmt-titian);
+  text-shadow: 0 0 5px rgba(211, 73, 71, 0.4);
 }
 
 .vp-doc ul {
@@ -1582,25 +1680,25 @@ html {
 
 .vp-doc ul > li:hover {
   transform: translateX(5px);
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  text-shadow: 0 0 8px rgba(249, 212, 108, 0.35);
 }
 
 .vp-doc ul > li::before {
   content: "✦";
   position: absolute;
   left: -1.5em;
-  color: #ff0080;
+  color: var(--ssmt-accent);
   font-size: 1.2em;
   top: -0.1em;
-  text-shadow: 0 0 5px rgba(255, 0, 128, 0.4);
+  text-shadow: 0 0 5px rgba(235, 92, 32, 0.4);
   animation: starTwinkle 3s infinite alternate;
   transition: transform 0.3s ease;
 }
 
 .vp-doc ul > li:hover::before {
   transform: rotate(180deg) scale(1.2);
-  color: #00c6ff;
-  text-shadow: 0 0 8px rgba(0, 198, 255, 0.6);
+  color: var(--ssmt-schonbrunn);
+  text-shadow: 0 0 8px rgba(249, 212, 108, 0.6);
 }
 
 @keyframes starTwinkle {
@@ -1625,22 +1723,22 @@ html {
   left: -2em;
   width: 1.5em;
   height: 1.5em;
-  background: rgba(121, 40, 202, 0.1);
-  color: #a755f7;
+  background: rgba(73, 45, 34, 0.1);
+  color: var(--ssmt-accent-2);
   border-radius: 50%;
   text-align: center;
   line-height: 1.5em;
   font-family: 'Rajdhani', sans-serif;
   font-weight: 700;
   font-size: 0.9em;
-  border: 1px solid rgba(121, 40, 202, 0.3);
-  box-shadow: 0 0 5px rgba(121, 40, 202, 0.2);
+  border: 1px solid rgba(73, 45, 34, 0.3);
+  box-shadow: 0 0 5px rgba(73, 45, 34, 0.2);
   top: 0.2em;
 }
 
 .vp-doc a {
   text-decoration: none !important;
-  background: linear-gradient(to right, #00c6ff, #ff0080);
+  background: linear-gradient(to right, var(--ssmt-schonbrunn), var(--ssmt-accent));
   background-size: 0% 2px;
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -1650,20 +1748,20 @@ html {
 
 .vp-doc a:hover {
   background-size: 100% 2px;
-  color: #00c6ff !important;
+  color: var(--ssmt-schonbrunn) !important;
 }
 
 .vp-doc hr {
   border: none;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #0072ff, #c50063, transparent);
+  background: linear-gradient(90deg, transparent, var(--ssmt-burgundy), var(--ssmt-burgundy), transparent);
   margin: 3rem 0;
   opacity: 0.4;
   position: relative;
 }
 
 .dark .vp-doc hr {
-  background: linear-gradient(90deg, transparent, #00c6ff, #ff0080, transparent);
+  background: linear-gradient(90deg, transparent, var(--ssmt-schonbrunn), var(--ssmt-accent), transparent);
   opacity: 0.6;
 }
 
@@ -1680,8 +1778,8 @@ html {
 }
 
 .dark .vp-doc hr::after {
-  color: #ff0080;
-  text-shadow: 0 0 5px rgba(255, 0, 128, 0.5);
+  color: var(--ssmt-accent);
+  text-shadow: 0 0 5px rgba(235, 92, 32, 0.5);
 }
 
 .vp-doc kbd {
@@ -1705,10 +1803,10 @@ html {
 
 .dark .vp-doc kbd {
   background: linear-gradient(180deg, rgba(0,0,0,0.3), rgba(0,0,0,0.5));
-  border: 1px solid rgba(0, 198, 255, 0.3);
-  border-bottom: 3px solid rgba(0, 198, 255, 0.5);
-  color: #00c6ff;
-  text-shadow: 0 0 5px rgba(0, 198, 255, 0.5);
+  border: 1px solid rgba(249, 212, 108, 0.3);
+  border-bottom: 3px solid rgba(249, 212, 108, 0.5);
+  color: var(--ssmt-schonbrunn);
+  text-shadow: 0 0 5px rgba(249, 212, 108, 0.5);
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
@@ -1718,7 +1816,7 @@ html {
   text-decoration: none !important;
   margin-left: -0.8em;
   padding-right: 0.5em;
-  color: #ff0080 !important;
+  color: var(--ssmt-accent) !important;
 }
 
 .vp-doc h1:hover .header-anchor,
@@ -1738,7 +1836,7 @@ html {
 
 .vp-doc .header-anchor:hover::before {
   filter: none;
-  text-shadow: 0 0 5px rgba(255, 0, 128, 0.5);
+  text-shadow: 0 0 5px rgba(235, 92, 32, 0.5);
 }
 
 
@@ -1758,9 +1856,9 @@ html {
 }
 
 .vp-doc .VPDocFooter .pager-link:hover {
-  border-color: rgba(255, 0, 128, 0.5) !important;
+  border-color: rgba(235, 92, 32, 0.5) !important;
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 15px 40px -10px rgba(255, 0, 128, 0.4);
+  box-shadow: 0 15px 40px -10px rgba(235, 92, 32, 0.4);
 }
 
 .vp-doc .VPDocFooter .pager-link .title {
@@ -1781,12 +1879,12 @@ html {
 }
 
 .vp-doc .VPDocFooter .pager-link:hover .title {
-  background: linear-gradient(90deg, #ff0080, #a755f7);
+  background: linear-gradient(90deg, var(--ssmt-accent), var(--ssmt-accent-2));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   letter-spacing: 2px;
-  text-shadow: 0 0 10px rgba(255, 0, 128, 0.3);
+  text-shadow: 0 0 10px rgba(235, 92, 32, 0.3);
 }
 
 .vp-doc .VPDocFooter .pager-link.prev::before,
@@ -1813,29 +1911,29 @@ html {
 
 .VPDocOutline .outline-link:hover {
   opacity: 1;
-  color: #c50063 !important;
+  color: var(--ssmt-van-dyke) !important;
   transform: translateX(8px);
 }
 
 .dark .VPDocOutline .outline-link:hover {
-  color: #ff0080 !important;
-  text-shadow: 0 0 8px rgba(255, 0, 128, 0.6);
+  color: var(--ssmt-accent) !important;
+  text-shadow: 0 0 8px rgba(235, 92, 32, 0.6);
 }
 
 .VPDocOutline .outline-link.active {
   opacity: 1;
-  color: #7e22ce !important;
-  border-left-color: #7e22ce;
-  background: linear-gradient(90deg, rgba(126, 34, 206, 0.1), transparent);
+  color: var(--ssmt-van-dyke) !important;
+  border-left-color: var(--ssmt-van-dyke);
+  background: linear-gradient(90deg, rgba(73, 45, 34, 0.1), transparent);
   padding-left: 18px;
   font-weight: 600;
 }
 
 .dark .VPDocOutline .outline-link.active {
-  color: #a755f7 !important;
-  border-left-color: #a755f7;
-  background: linear-gradient(90deg, rgba(167, 85, 247, 0.15), transparent);
-  text-shadow: 0 0 15px rgba(167, 85, 247, 0.6);
+  color: var(--ssmt-accent-2) !important;
+  border-left-color: var(--ssmt-accent-2);
+  background: linear-gradient(90deg, rgba(73, 45, 34, 0.18), transparent);
+  text-shadow: 0 0 15px rgba(73, 45, 34, 0.6);
 }
 
 /* ======= 1. TOC 大纲面板毛玻璃 ======= */
@@ -1889,7 +1987,7 @@ html {
 }
 
 .VPLocalNav .title:hover {
-  color: #ff0080 !important;
+  color: var(--ssmt-accent) !important;
 }
 
 .VPLocalNav .open-sidebar-btn {
@@ -1898,15 +1996,15 @@ html {
 }
 
 .VPLocalNav .open-sidebar-btn:hover {
-  background: rgba(255, 0, 128, 0.08);
-  color: #ff0080;
+  background: rgba(235, 92, 32, 0.08);
+  color: var(--ssmt-accent);
 }
 
 /* ======= 3. 搜索弹窗粉色主题 ======= */
 .DocSearch {
-  --docsearch-primary-color: #ff0080 !important;
-  --docsearch-highlight-color: #ff0080 !important;
-  --docsearch-searchbox-shadow: 0 0 0 3px rgba(255, 0, 128, 0.2) !important;
+  --docsearch-primary-color: var(--ssmt-klein) !important;
+  --docsearch-highlight-color: var(--ssmt-mars) !important;
+  --docsearch-searchbox-shadow: 0 0 0 3px rgba(1, 139, 141, 0.2) !important;
   --docsearch-container-background: rgba(0, 0, 0, 0.4) !important;
   --docsearch-modal-background: rgba(255, 255, 255, 0.85) !important;
   --docsearch-modal-shadow: 0 10px 40px rgba(0, 0, 0, 0.1) !important;
@@ -1922,14 +2020,14 @@ html {
   --docsearch-modal-shadow: 0 10px 40px rgba(0, 0, 0, 0.5) !important;
   --docsearch-footer-background: rgba(11, 12, 21, 0.95) !important;
   --docsearch-hit-background: rgba(255, 255, 255, 0.05) !important;
-  --docsearch-hit-active-color: #ff0080 !important;
+  --docsearch-hit-active-color: var(--ssmt-tiffany) !important;
   --docsearch-logo-color: rgba(255, 255, 255, 0.3) !important;
 }
 
 .DocSearch-Modal {
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
-  border: 1px solid rgba(255, 0, 128, 0.1) !important;
+  border: 1px solid rgba(1, 139, 141, 0.18) !important;
   border-radius: 16px !important;
   overflow: hidden;
 }
@@ -1940,17 +2038,17 @@ html {
 }
 
 .DocSearch-Hit[aria-selected="true"] a {
-  background: linear-gradient(135deg, rgba(255, 0, 128, 0.1), rgba(167, 85, 247, 0.1)) !important;
-  border-left: 3px solid #ff0080 !important;
+  background: linear-gradient(135deg, rgba(113, 226, 209, 0.14), rgba(0, 47, 167, 0.08)) !important;
+  border-left: 3px solid var(--ssmt-mars) !important;
 }
 
 .DocSearch-Form {
   border-radius: 10px !important;
-  box-shadow: 0 0 0 2px rgba(255, 0, 128, 0.15) !important;
+  box-shadow: 0 0 0 2px rgba(1, 139, 141, 0.16) !important;
 }
 
 .DocSearch-Form:focus-within {
-  box-shadow: 0 0 0 2px #ff0080 !important;
+  box-shadow: 0 0 0 2px var(--ssmt-klein) !important;
 }
 
 .DocSearch-Reset {
@@ -1958,7 +2056,7 @@ html {
 }
 
 .DocSearch-Reset:hover {
-  color: #ff0080 !important;
+  color: var(--ssmt-titian) !important;
   transform: scale(1.15);
 }
 
@@ -1988,13 +2086,13 @@ html {
 
 /* ======= 5. 代码行高亮 ======= */
 .vp-doc .shiki .highlighted {
-  background-color: rgba(255, 0, 128, 0.06) !important;
+  background-color: rgba(249, 212, 108, 0.08) !important;
   display: block;
   position: relative;
 }
 
 .dark .vp-doc .shiki .highlighted {
-  background-color: rgba(255, 0, 128, 0.08) !important;
+  background-color: rgba(235, 92, 32, 0.1) !important;
 }
 
 .vp-doc .shiki .highlighted::before {
@@ -2004,34 +2102,34 @@ html {
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(180deg, #ff0080, #a755f7);
+  background: linear-gradient(180deg, var(--ssmt-hermes), var(--ssmt-van-dyke));
   border-radius: 0 2px 2px 0;
 }
 
 /* 添加行（diff） */
 .vp-doc .shiki .highlighted.added {
-  background-color: rgba(0, 200, 83, 0.08) !important;
+  background-color: rgba(110, 204, 84, 0.08) !important;
 }
 
 .vp-doc .shiki .highlighted.added::before {
-  background: linear-gradient(180deg, #00c853, #00e676);
+  background: linear-gradient(180deg, var(--ssmt-success), var(--ssmt-tech));
 }
 
 .dark .vp-doc .shiki .highlighted.added {
-  background-color: rgba(0, 200, 83, 0.12) !important;
+  background-color: rgba(110, 204, 84, 0.12) !important;
 }
 
 /* 删除行（diff） */
 .vp-doc .shiki .highlighted.removed {
-  background-color: rgba(255, 0, 0, 0.08) !important;
+  background-color: rgba(200, 22, 29, 0.08) !important;
 }
 
 .vp-doc .shiki .highlighted.removed::before {
-  background: linear-gradient(180deg, #ff1744, #ff5252);
+  background: linear-gradient(180deg, var(--ssmt-china-red), var(--ssmt-titian));
 }
 
 .dark .vp-doc .shiki .highlighted.removed {
-  background-color: rgba(255, 0, 0, 0.12) !important;
+  background-color: rgba(200, 22, 29, 0.12) !important;
 }
 
 /* 代码行号与高亮对齐 */
@@ -2051,32 +2149,32 @@ html {
 }
 
 .VPNavBarSearchButton {
-  background-color: rgba(0, 0, 0, 0.05) !important;
-  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  background-color: rgba(113, 226, 209, 0.14) !important;
+  border: 1px solid rgba(1, 139, 141, 0.18) !important;
   border-radius: 8px !important;
   transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .dark .VPNavBarSearchButton {
-  background-color: rgba(0, 0, 0, 0.2) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background-color: rgba(13, 58, 105, 0.28) !important;
+  border: 1px solid rgba(113, 226, 209, 0.24) !important;
 }
 
 .VPNavBarSearchButton:hover {
-  border-color: #ff0080 !important;
-  box-shadow: 0 0 20px rgba(255, 0, 128, 0.4);
-  background-color: rgba(255, 0, 128, 0.1) !important;
+  border-color: var(--ssmt-mars) !important;
+  box-shadow: 0 0 20px rgba(1, 139, 141, 0.3);
+  background-color: rgba(113, 226, 209, 0.18) !important;
   transform: scale(1.05);
 }
 
 .VPNavBarSearchButton .DocSearch-Search-Icon {
-  color: #a755f7 !important;
+  color: var(--ssmt-klein) !important;
   transition: transform 0.5s ease;
 }
 
 .VPNavBarSearchButton:hover .DocSearch-Search-Icon {
   transform: scale(1.3) rotate(180deg);
-  color: #ff0080 !important;
+  color: var(--ssmt-mars) !important;
 }
 
 .VPNavBarSearchButton .DocSearch-Button-Placeholder {
@@ -2087,8 +2185,8 @@ html {
 }
 
 .VPNavBarSearchButton:hover .DocSearch-Button-Placeholder {
-  color: #ff0080;
-  text-shadow: 0 0 5px rgba(255, 0, 128, 0.5);
+  color: var(--ssmt-klein);
+  text-shadow: 0 0 5px rgba(1, 139, 141, 0.36);
 }
 
 
@@ -2153,15 +2251,15 @@ html {
 }
 
 .VPNavScreen .VPNavScreenMenuLink a:hover {
-  color: #ff0080 !important;
+  color: var(--ssmt-accent) !important;
   padding-left: 24px !important;
-  background: linear-gradient(90deg, rgba(255, 0, 128, 0.08), transparent);
+  background: linear-gradient(90deg, rgba(235, 92, 32, 0.08), transparent);
 }
 
 .VPNavScreen .VPNavScreenMenuLink.active a {
-  color: #ff0080 !important;
-  background: linear-gradient(90deg, rgba(255, 0, 128, 0.06), transparent);
-  border-left: 3px solid #ff0080;
+  color: var(--ssmt-accent) !important;
+  background: linear-gradient(90deg, rgba(235, 92, 32, 0.06), transparent);
+  border-left: 3px solid var(--ssmt-accent);
 }
 
 /* Nav menu group button (expandable sections) */
@@ -2190,8 +2288,8 @@ html {
 }
 
 .VPNavScreen .VPNavScreenMenuGroup .button:hover {
-  background: linear-gradient(90deg, rgba(255, 0, 128, 0.08), transparent);
-  color: #ff0080;
+  background: linear-gradient(90deg, rgba(235, 92, 32, 0.08), transparent);
+  color: var(--ssmt-accent);
 }
 
 .VPNavScreen .VPNavScreenMenuGroup .button-text {
@@ -2204,7 +2302,7 @@ html {
 
 .VPNavScreen .VPNavScreenMenuGroup .button-icon {
   font-size: 14px;
-  color: #ff0080;
+  color: var(--ssmt-accent);
   transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -2239,10 +2337,10 @@ html {
 }
 
 .VPNavScreen .VPNavScreenMenuGroup .item a:hover {
-  color: #ff0080 !important;
-  background: linear-gradient(90deg, rgba(255, 0, 128, 0.06), transparent);
+  color: var(--ssmt-accent) !important;
+  background: linear-gradient(90deg, rgba(235, 92, 32, 0.06), transparent);
   padding-left: 22px !important;
-  border-left: 2px solid #ff0080;
+  border-left: 2px solid var(--ssmt-accent);
   margin-left: -2px;
 }
 
@@ -2304,16 +2402,16 @@ html {
 }
 
 .VPNavScreen .VPNavScreenSocialLinks a:hover {
-  color: #ff0080;
-  background: rgba(255, 0, 128, 0.1);
+  color: var(--ssmt-accent);
+  background: rgba(235, 92, 32, 0.1);
   transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(255, 0, 128, 0.2);
+  box-shadow: 0 0 20px rgba(235, 92, 32, 0.2);
 }
 
 
 .VPNavBarTitle:hover .logo {
   animation: glitch-anim 0.3s infinite;
-  filter: drop-shadow(0 0 5px #ff0080);
+  filter: drop-shadow(0 0 5px var(--ssmt-accent));
 }
 
 @keyframes glitch-anim {
@@ -2350,11 +2448,11 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 0, 128, 0.5);
+  background: rgba(235, 92, 32, 0.5);
 }
 
 .dark ::-webkit-scrollbar-track {
-  background: linear-gradient(to bottom, transparent, rgba(167, 85, 247, 0.1), transparent);
+  background: linear-gradient(to bottom, transparent, rgba(73, 45, 34, 0.1), transparent);
 }
 
 .dark ::-webkit-scrollbar-thumb {
@@ -2364,7 +2462,7 @@ html {
 }
 
 .dark ::-webkit-scrollbar-thumb:hover {
-  background: #ff0080;
+  background: var(--ssmt-accent);
   box-shadow: none;
 }
 
@@ -2380,31 +2478,69 @@ html {
 
 
 .VPSwitchAppearance {
-  background-color: rgba(0, 0, 0, 0.05) !important;
-  border: 1px solid rgba(0, 0, 0, 0.1) !important;
-  border-radius: 22px !important;
-  transition: all 0.5s ease;
+  width: 46px !important;
+  height: 28px !important;
+  border: 1px solid rgba(235, 92, 32, 0.18) !important;
+  border-radius: 999px !important;
+  background: rgba(255, 255, 255, 0.68) !important;
+  box-shadow: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
 }
 
 .dark .VPSwitchAppearance {
-  background-color: rgba(0, 0, 0, 0.2) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(113, 226, 209, 0.2) !important;
+  background: rgba(13, 58, 105, 0.18) !important;
+  box-shadow: none;
 }
 
 .VPSwitchAppearance:hover {
-  border-color: #a755f7 !important;
-  box-shadow: 0 0 15px rgba(167, 85, 247, 0.4);
-  transform: rotate(180deg);
+  border-color: rgba(235, 92, 32, 0.36) !important;
+  background: rgba(249, 212, 108, 0.12) !important;
+  transform: translateY(-1px);
+}
+
+.dark .VPSwitchAppearance:hover {
+  border-color: rgba(113, 226, 209, 0.38) !important;
+  background: rgba(113, 226, 209, 0.1) !important;
+}
+
+.VPSwitchAppearance:focus-visible {
+  outline: 2px solid rgba(249, 212, 108, 0.52);
+  outline-offset: 2px;
 }
 
 .VPSwitchAppearance .check {
-  transform: none !important;
+  top: 5px !important;
+  left: 5px !important;
+  width: 16px !important;
+  height: 16px !important;
   border-radius: 50% !important;
+  background: var(--ssmt-hermes) !important;
+  box-shadow: none !important;
+}
+
+.dark .VPSwitchAppearance .check {
+  transform: translateX(20px) !important;
+  background: var(--ssmt-tiffany) !important;
+  box-shadow: none !important;
+}
+
+.VPSwitchAppearance .icon {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.VPSwitchAppearance .icon :is(.sun, .moon) {
+  top: 3px !important;
+  left: 3px !important;
+  width: 10px !important;
+  height: 10px !important;
+  color: #fff !important;
 }
 
 
 .VPBackToTop {
-  background-color: rgba(255, 0, 128, 0.8) !important;
+  background-color: rgba(235, 92, 32, 0.8) !important;
   backdrop-filter: blur(5px);
   border-radius: 50% !important;
   width: 48px !important;
@@ -2428,8 +2564,8 @@ html {
 }
 
 .VPBackToTop:hover {
-  background-color: #ff0080 !important;
-  box-shadow: 0 0 20px rgba(255, 0, 128, 0.6), 0 0 40px rgba(255, 0, 128, 0.3);
+  background-color: var(--ssmt-accent) !important;
+  box-shadow: 0 0 20px rgba(235, 92, 32, 0.6), 0 0 40px rgba(235, 92, 32, 0.3);
   transform: scale(1.1) !important;
 }
 
@@ -2441,29 +2577,29 @@ html {
 
 
 .VPSidebarItem.is-active .text {
-  background: linear-gradient(90deg, rgba(197, 0, 99, 0.1), transparent);
-  border-left: 3px solid #c50063;
+  background: linear-gradient(90deg, rgba(73, 45, 34, 0.1), transparent);
+  border-left: 3px solid var(--ssmt-van-dyke);
   padding-left: 12px;
-  color: #c50063 !important;
+  color: var(--ssmt-van-dyke) !important;
   border-radius: 0 8px 8px 0;
   font-weight: 600;
 }
 
 .dark .VPSidebarItem.is-active .text {
-  background: linear-gradient(90deg, rgba(255, 0, 128, 0.1), transparent);
-  border-left: 3px solid #ff0080;
-  color: #ff0080 !important;
-  text-shadow: 0 0 10px rgba(255, 0, 128, 0.4);
+  background: linear-gradient(90deg, rgba(235, 92, 32, 0.1), transparent);
+  border-left: 3px solid var(--ssmt-accent);
+  color: var(--ssmt-accent) !important;
+  text-shadow: 0 0 10px rgba(235, 92, 32, 0.4);
 }
 
 .VPSidebarItem .text:not(.is-active):hover {
-  color: #7e22ce !important;
+  color: var(--ssmt-van-dyke) !important;
   transform: translateX(5px);
 }
 
 .dark .VPSidebarItem .text:not(.is-active):hover {
-  color: #a755f7 !important;
-  text-shadow: 0 0 5px rgba(167, 85, 247, 0.4);
+  color: var(--ssmt-accent-2) !important;
+  text-shadow: 0 0 5px rgba(73, 45, 34, 0.4);
 }
 
 /* Remove TOC gradient */
