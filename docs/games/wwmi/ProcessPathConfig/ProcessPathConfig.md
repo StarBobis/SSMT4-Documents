@@ -8,14 +8,18 @@
 目标进程路径 `C:\Program Files\Wuthering Waves\Wuthering Waves Game\Client\Binaries\Win64\Client-Win64-Shipping.exe`
 (换成你自己的Client-Win64-Shipping.exe)
 
-启动器路径 `C:\Program Files\Wuthering Waves\Wuthering Waves Game\Wuthering Waves.exe`
-(换成你自己的Wuthering Waves.exe)
+启动器路径 `C:\Program Files\Wuthering Waves\Wuthering Waves Game\Client\Binaries\Win64\Client-Win64-Shipping.exe`
+(换成你自己的Client-Win64-Shipping.exe)
 
-启动参数 `-d3d11`
+启动参数 `-dx11 -d3d11`
 
 ![alt text](image-1.png)
 
+启动方式 `普通启动`
 
+额外注入dll `如图，点击刷新按钮自动设为当前3Dmigoto目录下的d3d11.dll`
+
+![alt text](image-3.png)
 
 注意：由于SSMT并未维护用于修复鸣潮多级LOD的引擎ini文件，所以使用SSMT自带的3Dmigoto启动鸣潮会导致缺少LOD对应修复，导致角色界面和大世界的贴图Hash不同
 
