@@ -113,6 +113,15 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       ]
     }
   ],
+  '/developer/dx12/': [
+    {
+      text: 'DX12 开发记录',
+      items: [
+        { text: '开发进度记录', link: '/developer/dx12/DevInfo/DevInfo' },
+        { text: '常见问题记录', link: '/developer/dx12/FAQ/FAQ' }
+      ]
+    }
+  ],
   '/developer/rust/': [
     {
       text: 'Rust 学习笔记',
